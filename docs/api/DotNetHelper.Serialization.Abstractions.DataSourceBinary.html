@@ -1,0 +1,2108 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataSourceBinary
+   | DotNetHelper.Serialization.Abstractions </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataSourceBinary
+   | DotNetHelper.Serialization.Abstractions ">
+    <meta name="generator" content="docfx 2.41.0.0">
+    
+    <link rel="shortcut icon" href="../logo/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="../articles/sample.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/DotNetHelper.Serialization.Abstractions.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="DotNetHelper.Serialization.Abstractions.html" title="DotNetHelper.Serialization.Abstractions" class="">DotNetHelper.Serialization.Abstractions</a>
+                        
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="DotNetHelper.Serialization.Abstractions.DataSourceBinary.html" title="DataSourceBinary" class="active">DataSourceBinary</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="DotNetHelper.Serialization.Abstractions.Interface.html" title="DotNetHelper.Serialization.Abstractions.Interface" class="">DotNetHelper.Serialization.Abstractions.Interface</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html" title="ISerializer" class="">ISerializer</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary">
+  
+  
+  <h1 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary" class="text-break">Class DataSourceBinary
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DataSourceBinary</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html">ISerializer</a></div>
+    <div><span class="xref">IConvertible</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DotNetHelper.Serialization.Abstractions.html">DotNetHelper.Serialization.Abstractions</a></h6>
+  <h6><strong>Assembly</strong>: DotNetHelper.Serialization.Abstractions.dll</h6>
+  <h5 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataSourceBinary : object, ISerializer, IConvertible</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L27">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor">DataSourceBinary()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSourceBinary()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor_Encoding_BinaryFormatter_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.%23ctor(Encoding%2CBinaryFormatter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L22">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor_Encoding_BinaryFormatter_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor(Encoding,BinaryFormatter)">DataSourceBinary(Encoding, BinaryFormatter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSourceBinary(Encoding encoding, BinaryFormatter b = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BinaryFormatter</span></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Encoding.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L20">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Encoding_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Encoding" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding">Encoding</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Encoding Encoding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><p>The encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Formatter.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L15">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Formatter_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Formatter" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter">Formatter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryFormatter Formatter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryFormatter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_Stream_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L150">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_Stream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream)">Deserialize(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic Deserialize(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_Stream_Type_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L178">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_Stream_Type_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream,Type)">Deserialize(Stream, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Deserialize(Stream stream, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_System_String_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L141">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_System_String_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String)">Deserialize(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic Deserialize(string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_System_String_Type_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L169">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_System_String_Type_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String,Type)">Deserialize(String, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Deserialize(string content, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize__1_Stream_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize%60%601(Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L164">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize__1_Stream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(Stream)">Deserialize&lt;T&gt;(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Deserialize&lt;T&gt;(Stream stream)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize__1_System_String_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L155">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize__1_System_String_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.String)">Deserialize&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Deserialize&lt;T&gt;(string content)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_Stream_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L108">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_Stream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream)">DeserializeToList(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; DeserializeToList(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_Stream_Type_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L136">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_Stream_Type_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream,Type)">DeserializeToList(Stream, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;object&gt; DeserializeToList(Stream stream, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_System_String_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L99">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_System_String_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String)">DeserializeToList(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; DeserializeToList(string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_System_String_Type_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L127">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_System_String_Type_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String,Type)">DeserializeToList(String, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;object&gt; DeserializeToList(string content, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList__1_Stream_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList%60%601(Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L122">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList__1_Stream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(Stream)">DeserializeToList&lt;T&gt;(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; DeserializeToList&lt;T&gt;(Stream stream)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList__1_System_String_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L113">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList__1_System_String_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.String)">DeserializeToList&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; DeserializeToList&lt;T&gt;(string content)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_GetTypeCode.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L184">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_GetTypeCode_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_GetTypeCode" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode">GetTypeCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeCode GetTypeCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TypeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_System_Object_Type_Stream_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object%2CType%2CStream%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L40">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_System_Object_Type_Stream_System_Int32_System_Boolean_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)">SerializeToStream(Object, Type, Stream, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveStreamOpen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_System_Object_Type_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object%2CType%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L54">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_System_Object_Type_System_Int32_System_Boolean_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)">SerializeToStream(Object, Type, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveStreamOpen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream__1___0_Stream_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream%60%601(%60%600%2CStream%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L35">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream__1___0_Stream_System_Int32_System_Boolean_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)">SerializeToStream&lt;T&gt;(T, Stream, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SerializeToStream&lt;T&gt;(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveStreamOpen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream__1___0_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream%60%601(%60%600%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L74">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream__1___0_System_Int32_System_Boolean_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32,System.Boolean)">SerializeToStream&lt;T&gt;(T, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream SerializeToStream&lt;T&gt;(T obj, int bufferSize = 1024, bool leaveStreamOpen = false)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">leaveStreamOpen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString_System_Object_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L81">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString_System_Object_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)">SerializeToString(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SerializeToString(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString__1___0_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L90">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString__1___0_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString``1(``0)">SerializeToString&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SerializeToString&lt;T&gt;(T obj)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToBoolean_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L189">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToBoolean_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToBoolean_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(IFormatProvider)">ToBoolean(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ToBoolean(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToByte_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L204">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToByte_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToByte_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(IFormatProvider)">ToByte(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ToByte(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToChar_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L194">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToChar_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToChar_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(IFormatProvider)">ToChar(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char ToChar(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDateTime_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L254">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDateTime_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDateTime_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(IFormatProvider)">ToDateTime(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime ToDateTime(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDecimal_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L249">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDecimal_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDecimal_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(IFormatProvider)">ToDecimal(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal ToDecimal(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.decimal">Decimal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDouble_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L244">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDouble_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDouble_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(IFormatProvider)">ToDouble(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ToDouble(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt16_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L209">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt16_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt16_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(IFormatProvider)">ToInt16(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ToInt16(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt32_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L219">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt32_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt32_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(IFormatProvider)">ToInt32(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToInt32(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt64_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L229">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt64_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt64_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(IFormatProvider)">ToInt64(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToInt64(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSByte_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L199">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSByte_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSByte_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(IFormatProvider)">ToSByte(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sbyte ToSByte(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSingle_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L239">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSingle_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSingle_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(IFormatProvider)">ToSingle(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ToSingle(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToString_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L259">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToString_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToString_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(IFormatProvider)">ToString(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToType_Type_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(Type%2CIFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L264">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToType_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToType_Type_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(Type,IFormatProvider)">ToType(Type, IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ToType(Type conversionType, IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">conversionType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt16_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L214">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt16_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt16_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(IFormatProvider)">ToUInt16(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ToUInt16(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt32_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L224">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt32_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt32_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(IFormatProvider)">ToUInt32(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ToUInt32(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt64_IFormatProvider_.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L234">View Source</a>
+  </span>
+  <a id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt64_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64*"></a>
+  <h4 id="DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt64_IFormatProvider_" data-uid="DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(IFormatProvider)">ToUInt64(IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ToUInt64(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html">ISerializer</a>
+  </div>
+  <div>
+      <span class="xref">IConvertible</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/new/master/apiSpec/new?filename=DotNetHelper_Serialization_Abstractions_DataSourceBinary.md&amp;value=---%0Auid%3A%20DotNetHelper.Serialization.Abstractions.DataSourceBinary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/TheMofaDe/DotNet-Starter-Template/blob/master/src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright � 2019 Joseph McNeal Jr
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

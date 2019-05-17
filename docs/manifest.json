@@ -1,0 +1,167 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Business/TheMoFaDe/Code/TheMofaDe/DotNetHelper.Serialization.Abstractions/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html",
+          "hash": "fXtR3DRv5//FTAlBpJFfQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html",
+          "hash": "/l6TITX1LEQ+uGfV6IUdig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper.Serialization.Abstractions.Interface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper.Serialization.Abstractions.Interface.html",
+          "hash": "Ee+Y+kKf7+Y3wi4EXVxY5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetHelper.Serialization.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetHelper.Serialization.Abstractions.html",
+          "hash": "J7+e3LNRcBca/S4Dh24SyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/sample.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/sample.html",
+          "hash": "hhD/sxi7ID1enF3vDpjbag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png",
+          "link_to_path": "C:\\Business\\TheMoFaDe\\Code\\TheMofaDe\\DotNetHelper.Serialization.Abstractions\\docs/images/icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "yKPGfN1wFDAdRTOMgNgInw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "langwordmapping/langwordMapping.yml",
+      "output": {
+        "resource": {
+          "relative_path": "langwordmapping/langwordMapping.yml",
+          "link_to_path": "C:\\Business\\TheMoFaDe\\Code\\TheMofaDe\\DotNetHelper.Serialization.Abstractions\\docs/langwordmapping/langwordMapping.yml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper.Serialization.Abstractions.Interface
+  commentId: N:DotNetHelper.Serialization.Abstractions.Interface
+  id: DotNetHelper.Serialization.Abstractions.Interface
+  children:
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper.Serialization.Abstractions.Interface
+  nameWithType: DotNetHelper.Serialization.Abstractions.Interface
+  fullName: DotNetHelper.Serialization.Abstractions.Interface
+  type: Namespace
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+references:
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  commentId: T:DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  parent: DotNetHelper.Serialization.Abstractions.Interface
+  name: ISerializer
+  nameWithType: ISerializer
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+- uid: DotNetHelper.Serialization.Abstractions.Interface
+  commentId: N:DotNetHelper.Serialization.Abstractions.Interface
+  name: DotNetHelper.Serialization.Abstractions.Interface
+  nameWithType: DotNetHelper.Serialization.Abstractions.Interface
+  fullName: DotNetHelper.Serialization.Abstractions.Interface

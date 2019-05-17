@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper.Serialization.Abstractions
+  commentId: N:DotNetHelper.Serialization.Abstractions
+  id: DotNetHelper.Serialization.Abstractions
+  children:
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary
+  langs:
+  - csharp
+  - vb
+  name: DotNetHelper.Serialization.Abstractions
+  nameWithType: DotNetHelper.Serialization.Abstractions
+  fullName: DotNetHelper.Serialization.Abstractions
+  type: Namespace
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+references:
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary
+  commentId: T:DotNetHelper.Serialization.Abstractions.DataSourceBinary
+  name: DataSourceBinary
+  nameWithType: DataSourceBinary
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary

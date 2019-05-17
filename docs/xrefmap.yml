@@ -1,0 +1,607 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: DotNetHelper.Serialization.Abstractions
+  name: DotNetHelper.Serialization.Abstractions
+  href: api/DotNetHelper.Serialization.Abstractions.html
+  commentId: N:DotNetHelper.Serialization.Abstractions
+  fullName: DotNetHelper.Serialization.Abstractions
+  nameWithType: DotNetHelper.Serialization.Abstractions
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary
+  name: DataSourceBinary
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html
+  commentId: T:DotNetHelper.Serialization.Abstractions.DataSourceBinary
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary
+  nameWithType: DataSourceBinary
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor
+  name: DataSourceBinary()
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DataSourceBinary()
+  nameWithType: DataSourceBinary.DataSourceBinary()
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor(Encoding,BinaryFormatter)
+  name: DataSourceBinary(Encoding, BinaryFormatter)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor_Encoding_BinaryFormatter_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor(Encoding,BinaryFormatter)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DataSourceBinary(Encoding, BinaryFormatter)
+  nameWithType: DataSourceBinary.DataSourceBinary(Encoding, BinaryFormatter)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor*
+  name: DataSourceBinary
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary__ctor_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DataSourceBinary
+  nameWithType: DataSourceBinary.DataSourceBinary
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream)
+  name: Deserialize(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream)
+  nameWithType: DataSourceBinary.Deserialize(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream,Type)
+  name: Deserialize(Stream, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_Stream_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Stream, Type)
+  nameWithType: DataSourceBinary.Deserialize(Stream, Type)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String)
+  name: Deserialize(String)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String)
+  nameWithType: DataSourceBinary.Deserialize(String)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String,Type)
+  name: Deserialize(String, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_System_String_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String, Type)
+  nameWithType: DataSourceBinary.Deserialize(String, Type)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*
+  name: Deserialize
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize
+  nameWithType: DataSourceBinary.Deserialize
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(Stream)
+  name: Deserialize<T>(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize__1_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(Stream)
+  name.vb: Deserialize(Of T)(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize<T>(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Of T)(Stream)
+  nameWithType: DataSourceBinary.Deserialize<T>(Stream)
+  nameWithType.vb: DataSourceBinary.Deserialize(Of T)(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Deserialize__1_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize<T>(System.String)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Of T)(System.String)
+  nameWithType: DataSourceBinary.Deserialize<T>(String)
+  nameWithType.vb: DataSourceBinary.Deserialize(Of T)(String)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream)
+  name: DeserializeToList(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream)
+  nameWithType: DataSourceBinary.DeserializeToList(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream,Type)
+  name: DeserializeToList(Stream, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_Stream_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Stream, Type)
+  nameWithType: DataSourceBinary.DeserializeToList(Stream, Type)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String)
+  name: DeserializeToList(String)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String)
+  nameWithType: DataSourceBinary.DeserializeToList(String)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String,Type)
+  name: DeserializeToList(String, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_System_String_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String, Type)
+  nameWithType: DataSourceBinary.DeserializeToList(String, Type)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*
+  name: DeserializeToList
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList
+  nameWithType: DataSourceBinary.DeserializeToList
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(Stream)
+  name: DeserializeToList<T>(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList__1_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(Stream)
+  name.vb: DeserializeToList(Of T)(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList<T>(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Of T)(Stream)
+  nameWithType: DataSourceBinary.DeserializeToList<T>(Stream)
+  nameWithType.vb: DataSourceBinary.DeserializeToList(Of T)(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.String)
+  name: DeserializeToList<T>(String)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_DeserializeToList__1_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.String)
+  name.vb: DeserializeToList(Of T)(String)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList<T>(System.String)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Of T)(System.String)
+  nameWithType: DataSourceBinary.DeserializeToList<T>(String)
+  nameWithType.vb: DataSourceBinary.DeserializeToList(Of T)(String)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding
+  name: Encoding
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Encoding
+  commentId: P:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding
+  nameWithType: DataSourceBinary.Encoding
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding*
+  name: Encoding
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Encoding_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding
+  nameWithType: DataSourceBinary.Encoding
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter
+  name: Formatter
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Formatter
+  commentId: P:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter
+  nameWithType: DataSourceBinary.Formatter
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter*
+  name: Formatter
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_Formatter_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter
+  nameWithType: DataSourceBinary.Formatter
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
+  name: GetTypeCode()
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_GetTypeCode
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode()
+  nameWithType: DataSourceBinary.GetTypeCode()
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode*
+  name: GetTypeCode
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_GetTypeCode_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
+  nameWithType: DataSourceBinary.GetTypeCode
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  name: SerializeToStream(Object, Type, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_System_Object_Type_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object, Type, Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceBinary.SerializeToStream(Object, Type, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  name: SerializeToStream(Object, Type, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_System_Object_Type_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object, Type, System.Int32, System.Boolean)
+  nameWithType: DataSourceBinary.SerializeToStream(Object, Type, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*
+  name: SerializeToStream
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream
+  nameWithType: DataSourceBinary.SerializeToStream
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  name: SerializeToStream<T>(T, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream__1___0_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream<T>(T, Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(Of T)(T, Stream, System.Int32, System.Boolean)
+  nameWithType: DataSourceBinary.SerializeToStream<T>(T, Stream, Int32, Boolean)
+  nameWithType.vb: DataSourceBinary.SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  name: SerializeToStream<T>(T, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToStream__1___0_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream<T>(T, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
+  nameWithType: DataSourceBinary.SerializeToStream<T>(T, Int32, Boolean)
+  nameWithType.vb: DataSourceBinary.SerializeToStream(Of T)(T, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)
+  name: SerializeToString(Object)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString_System_Object_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)
+  nameWithType: DataSourceBinary.SerializeToString(Object)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString*
+  name: SerializeToString
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString
+  nameWithType: DataSourceBinary.SerializeToString
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString``1(``0)
+  name: SerializeToString<T>(T)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_SerializeToString__1___0_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString``1(``0)
+  name.vb: SerializeToString(Of T)(T)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString<T>(T)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(Of T)(T)
+  nameWithType: DataSourceBinary.SerializeToString<T>(T)
+  nameWithType.vb: DataSourceBinary.SerializeToString(Of T)(T)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(IFormatProvider)
+  name: ToBoolean(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToBoolean_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(IFormatProvider)
+  nameWithType: DataSourceBinary.ToBoolean(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean*
+  name: ToBoolean
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToBoolean_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean
+  nameWithType: DataSourceBinary.ToBoolean
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(IFormatProvider)
+  name: ToByte(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToByte_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(IFormatProvider)
+  nameWithType: DataSourceBinary.ToByte(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte*
+  name: ToByte
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToByte_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte
+  nameWithType: DataSourceBinary.ToByte
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(IFormatProvider)
+  name: ToChar(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToChar_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(IFormatProvider)
+  nameWithType: DataSourceBinary.ToChar(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar*
+  name: ToChar
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToChar_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar
+  nameWithType: DataSourceBinary.ToChar
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(IFormatProvider)
+  name: ToDateTime(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDateTime_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(IFormatProvider)
+  nameWithType: DataSourceBinary.ToDateTime(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime*
+  name: ToDateTime
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDateTime_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime
+  nameWithType: DataSourceBinary.ToDateTime
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(IFormatProvider)
+  name: ToDecimal(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDecimal_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(IFormatProvider)
+  nameWithType: DataSourceBinary.ToDecimal(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal*
+  name: ToDecimal
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDecimal_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal
+  nameWithType: DataSourceBinary.ToDecimal
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(IFormatProvider)
+  name: ToDouble(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDouble_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(IFormatProvider)
+  nameWithType: DataSourceBinary.ToDouble(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble*
+  name: ToDouble
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToDouble_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble
+  nameWithType: DataSourceBinary.ToDouble
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(IFormatProvider)
+  name: ToInt16(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt16_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(IFormatProvider)
+  nameWithType: DataSourceBinary.ToInt16(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16*
+  name: ToInt16
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt16_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16
+  nameWithType: DataSourceBinary.ToInt16
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(IFormatProvider)
+  name: ToInt32(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt32_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(IFormatProvider)
+  nameWithType: DataSourceBinary.ToInt32(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32*
+  name: ToInt32
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt32_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32
+  nameWithType: DataSourceBinary.ToInt32
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(IFormatProvider)
+  name: ToInt64(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt64_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(IFormatProvider)
+  nameWithType: DataSourceBinary.ToInt64(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64*
+  name: ToInt64
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToInt64_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64
+  nameWithType: DataSourceBinary.ToInt64
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(IFormatProvider)
+  name: ToSByte(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSByte_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(IFormatProvider)
+  nameWithType: DataSourceBinary.ToSByte(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte*
+  name: ToSByte
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSByte_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte
+  nameWithType: DataSourceBinary.ToSByte
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(IFormatProvider)
+  name: ToSingle(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSingle_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(IFormatProvider)
+  nameWithType: DataSourceBinary.ToSingle(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle*
+  name: ToSingle
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToSingle_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle
+  nameWithType: DataSourceBinary.ToSingle
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(IFormatProvider)
+  name: ToString(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToString_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(IFormatProvider)
+  nameWithType: DataSourceBinary.ToString(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString*
+  name: ToString
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToString_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString
+  nameWithType: DataSourceBinary.ToString
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(Type,IFormatProvider)
+  name: ToType(Type, IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToType_Type_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(Type,IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(Type, IFormatProvider)
+  nameWithType: DataSourceBinary.ToType(Type, IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType*
+  name: ToType
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToType_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType
+  nameWithType: DataSourceBinary.ToType
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(IFormatProvider)
+  name: ToUInt16(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt16_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(IFormatProvider)
+  nameWithType: DataSourceBinary.ToUInt16(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16*
+  name: ToUInt16
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt16_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16
+  nameWithType: DataSourceBinary.ToUInt16
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(IFormatProvider)
+  name: ToUInt32(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt32_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(IFormatProvider)
+  nameWithType: DataSourceBinary.ToUInt32(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32*
+  name: ToUInt32
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt32_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32
+  nameWithType: DataSourceBinary.ToUInt32
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(IFormatProvider)
+  name: ToUInt64(IFormatProvider)
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt64_IFormatProvider_
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(IFormatProvider)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(IFormatProvider)
+  nameWithType: DataSourceBinary.ToUInt64(IFormatProvider)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64*
+  name: ToUInt64
+  href: api/DotNetHelper.Serialization.Abstractions.DataSourceBinary.html#DotNetHelper_Serialization_Abstractions_DataSourceBinary_ToUInt64_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64
+  nameWithType: DataSourceBinary.ToUInt64
+- uid: DotNetHelper.Serialization.Abstractions.Interface
+  name: DotNetHelper.Serialization.Abstractions.Interface
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.html
+  commentId: N:DotNetHelper.Serialization.Abstractions.Interface
+  fullName: DotNetHelper.Serialization.Abstractions.Interface
+  nameWithType: DotNetHelper.Serialization.Abstractions.Interface
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  name: ISerializer
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html
+  commentId: T:DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  nameWithType: ISerializer
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  name: Deserialize(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  nameWithType: ISerializer.Deserialize(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
+  name: Deserialize(Stream, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize_Stream_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream, Type)
+  nameWithType: ISerializer.Deserialize(Stream, Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  name: Deserialize(String)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  nameWithType: ISerializer.Deserialize(String)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
+  name: Deserialize(String, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize_System_String_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String, Type)
+  nameWithType: ISerializer.Deserialize(String, Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  name: Deserialize
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
+  nameWithType: ISerializer.Deserialize
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
+  name: Deserialize<T>(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize__1_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
+  name.vb: Deserialize(Of T)(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(Stream)
+  nameWithType: ISerializer.Deserialize<T>(Stream)
+  nameWithType.vb: ISerializer.Deserialize(Of T)(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_Deserialize__1_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(System.String)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(System.String)
+  nameWithType: ISerializer.Deserialize<T>(String)
+  nameWithType.vb: ISerializer.Deserialize(Of T)(String)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  name: DeserializeToList(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  nameWithType: ISerializer.DeserializeToList(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
+  name: DeserializeToList(Stream, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList_Stream_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream, Type)
+  nameWithType: ISerializer.DeserializeToList(Stream, Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  name: DeserializeToList(String)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  nameWithType: ISerializer.DeserializeToList(String)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
+  name: DeserializeToList(String, Type)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList_System_String_Type_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String, Type)
+  nameWithType: ISerializer.DeserializeToList(String, Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  name: DeserializeToList
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
+  nameWithType: ISerializer.DeserializeToList
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
+  name: DeserializeToList<T>(Stream)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList__1_Stream_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
+  name.vb: DeserializeToList(Of T)(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(Stream)
+  nameWithType: ISerializer.DeserializeToList<T>(Stream)
+  nameWithType.vb: ISerializer.DeserializeToList(Of T)(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.String)
+  name: DeserializeToList<T>(String)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_DeserializeToList__1_System_String_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.String)
+  name.vb: DeserializeToList(Of T)(String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(System.String)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(System.String)
+  nameWithType: ISerializer.DeserializeToList<T>(String)
+  nameWithType.vb: ISerializer.DeserializeToList(Of T)(String)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  name: SerializeToStream(Object, Type, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToStream_System_Object_Type_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, Type, Stream, System.Int32, System.Boolean)
+  nameWithType: ISerializer.SerializeToStream(Object, Type, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  name: SerializeToStream(Object, Type, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToStream_System_Object_Type_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, Type, System.Int32, System.Boolean)
+  nameWithType: ISerializer.SerializeToStream(Object, Type, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  name: SerializeToStream
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToStream_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
+  nameWithType: ISerializer.SerializeToStream
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  name: SerializeToStream<T>(T, Stream, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToStream__1___0_Stream_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, Stream, System.Int32, System.Boolean)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Stream, Int32, Boolean)
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  name: SerializeToStream<T>(T, Int32, Boolean)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToStream__1___0_System_Int32_System_Boolean_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Int32, Boolean)
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  name: SerializeToString(Object)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToString_System_Object_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  nameWithType: ISerializer.SerializeToString(Object)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
+  name: SerializeToString
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToString_
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString
+  isSpec: "True"
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString
+  nameWithType: ISerializer.SerializeToString
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
+  name: SerializeToString<T>(T)
+  href: api/DotNetHelper.Serialization.Abstractions.Interface.ISerializer.html#DotNetHelper_Serialization_Abstractions_Interface_ISerializer_SerializeToString__1___0_
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
+  name.vb: SerializeToString(Of T)(T)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString<T>(T)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(Of T)(T)
+  nameWithType: ISerializer.SerializeToString<T>(T)
+  nameWithType.vb: ISerializer.SerializeToString(Of T)(T)

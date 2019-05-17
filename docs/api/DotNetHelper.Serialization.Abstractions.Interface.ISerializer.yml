@@ -1,0 +1,958 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  commentId: T:DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  id: ISerializer
+  parent: DotNetHelper.Serialization.Abstractions.Interface
+  children:
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.String)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.String)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: ISerializer
+  nameWithType: ISerializer
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  type: Interface
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: ISerializer
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 6
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  syntax:
+    content: 'public interface ISerializer : IConvertible'
+    content.vb: >-
+      Public Interface ISerializer
+          Inherits IConvertible
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  id: SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToStream<T>(T, Stream, Int32, Boolean)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, Stream, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: SerializeToStream
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 16
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nSerializes to stream.\n"
+  example: []
+  syntax:
+    content: >-
+      void SerializeToStream<T>(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
+          where T : class
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The obj.
+    - id: stream
+      type: Stream
+      description: The stream.
+    - id: bufferSize
+      type: System.Int32
+      description: ''
+    - id: leaveStreamOpen
+      type: System.Boolean
+      description: ''
+    typeParameters:
+    - id: T
+    content.vb: Sub SerializeToStream(Of T As Class)(obj As T, stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, Stream, System.Int32, System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Stream, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  id: SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToStream(Object, Type, Stream, Int32, Boolean)
+  nameWithType: ISerializer.SerializeToStream(Object, Type, Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, Type, Stream, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: SerializeToStream
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 28
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nSerializes to stream.\n"
+  example: []
+  syntax:
+    content: void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The obj.
+    - id: type
+      type: Type
+      description: ''
+    - id: stream
+      type: Stream
+      description: The stream.
+    - id: bufferSize
+      type: System.Int32
+      description: ''
+    - id: leaveStreamOpen
+      type: System.Boolean
+      description: ''
+    content.vb: Sub SerializeToStream(obj As Object, type As Type, stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  id: SerializeToStream``1(``0,System.Int32,System.Boolean)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToStream<T>(T, Int32, Boolean)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: SerializeToStream
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 37
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nSerializes to stream.\n"
+  example: []
+  syntax:
+    content: >-
+      Stream SerializeToStream<T>(T obj, int bufferSize = 1024, bool leaveStreamOpen = false)
+          where T : class
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The obj.
+    - id: bufferSize
+      type: System.Int32
+      description: ''
+    - id: leaveStreamOpen
+      type: System.Boolean
+      description: ''
+    typeParameters:
+    - id: T
+    return:
+      type: Stream
+    content.vb: Function SerializeToStream(Of T As Class)(obj As T, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
+  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  id: SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToStream(Object, Type, Int32, Boolean)
+  nameWithType: ISerializer.SerializeToStream(Object, Type, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, Type, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: SerializeToStream
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 48
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nSerializes to stream.\n"
+  example: []
+  syntax:
+    content: Stream SerializeToStream(object obj, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The obj.
+    - id: type
+      type: Type
+      description: ''
+    - id: bufferSize
+      type: System.Int32
+      description: ''
+    - id: leaveStreamOpen
+      type: System.Boolean
+      description: ''
+    return:
+      type: Stream
+    content.vb: Function SerializeToStream(obj As Object, type As Type, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  id: SerializeToString(System.Object)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToString(Object)
+  nameWithType: ISerializer.SerializeToString(Object)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: SerializeToString
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 56
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nSerializes to string.\n"
+  example: []
+  syntax:
+    content: string SerializeToString(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The obj.
+    return:
+      type: System.String
+      description: System.String.
+    content.vb: Function SerializeToString(obj As Object) As String
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
+  id: SerializeToString``1(``0)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToString<T>(T)
+  nameWithType: ISerializer.SerializeToString<T>(T)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: SerializeToString
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 64
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nSerializes to string.\n"
+  example: []
+  syntax:
+    content: >-
+      string SerializeToString<T>(T obj)
+          where T : class
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The obj.
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+      description: System.String.
+    content.vb: Function SerializeToString(Of T As Class)(obj As T) As String
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
+  nameWithType.vb: ISerializer.SerializeToString(Of T)(T)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(Of T)(T)
+  name.vb: SerializeToString(Of T)(T)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  id: DeserializeToList(System.String)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeToList(String)
+  nameWithType: ISerializer.DeserializeToList(String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: DeserializeToList
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 71
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from a string to a list of dynamic objects \n"
+  example: []
+  syntax:
+    content: List<dynamic> DeserializeToList(string content)
+    parameters:
+    - id: content
+      type: System.String
+      description: A delimited CSV string.
+    return:
+      type: List{System.Object}
+      description: IEnumerable&lt;dynamic>.
+    content.vb: Function DeserializeToList(content As String) As List(Of Object)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  id: DeserializeToList(Stream)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeToList(Stream)
+  nameWithType: ISerializer.DeserializeToList(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: DeserializeToList
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 78
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from a string to a list of dynamic objects \n"
+  example: []
+  syntax:
+    content: List<dynamic> DeserializeToList(Stream stream)
+    parameters:
+    - id: stream
+      type: Stream
+      description: A delimited CSV string.
+    return:
+      type: List{System.Object}
+      description: IEnumerable&lt;dynamic>.
+    content.vb: Function DeserializeToList(stream As Stream) As List(Of Object)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.String)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.String)
+  id: DeserializeToList``1(System.String)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeToList<T>(String)
+  nameWithType: ISerializer.DeserializeToList<T>(String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: DeserializeToList
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 88
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: >-
+      List<T> DeserializeToList<T>(string content)
+          where T : class
+    parameters:
+    - id: content
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: List{{T}}
+      description: List Of T
+    content.vb: Function DeserializeToList(Of T As Class)(content As String) As List(Of T)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  nameWithType.vb: ISerializer.DeserializeToList(Of T)(String)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(System.String)
+  name.vb: DeserializeToList(Of T)(String)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
+  id: DeserializeToList``1(Stream)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeToList<T>(Stream)
+  nameWithType: ISerializer.DeserializeToList<T>(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: DeserializeToList
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 97
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: >-
+      List<T> DeserializeToList<T>(Stream stream)
+          where T : class
+    parameters:
+    - id: stream
+      type: Stream
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: List{{T}}
+      description: List Of T
+    content.vb: Function DeserializeToList(Of T As Class)(stream As Stream) As List(Of T)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  nameWithType.vb: ISerializer.DeserializeToList(Of T)(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(Stream)
+  name.vb: DeserializeToList(Of T)(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
+  id: DeserializeToList(System.String,Type)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeToList(String, Type)
+  nameWithType: ISerializer.DeserializeToList(String, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String, Type)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: DeserializeToList
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 107
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: List<object> DeserializeToList(string content, Type type)
+    parameters:
+    - id: content
+      type: System.String
+      description: ''
+    - id: type
+      type: Type
+      description: The type.
+    return:
+      type: List{System.Object}
+      description: System.Object.
+    content.vb: Function DeserializeToList(content As String, type As Type) As List(Of Object)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
+  id: DeserializeToList(Stream,Type)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeToList(Stream, Type)
+  nameWithType: ISerializer.DeserializeToList(Stream, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream, Type)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: DeserializeToList
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 116
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: List<object> DeserializeToList(Stream stream, Type type)
+    parameters:
+    - id: stream
+      type: Stream
+      description: ''
+    - id: type
+      type: Type
+      description: The type.
+    return:
+      type: List{System.Object}
+      description: System.Object.
+    content.vb: Function DeserializeToList(stream As Stream, type As Type) As List(Of Object)
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  id: Deserialize(System.String)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(String)
+  nameWithType: ISerializer.Deserialize(String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: Deserialize
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 123
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from a string to a list of dynamic objects \n"
+  example: []
+  syntax:
+    content: dynamic Deserialize(string content)
+    parameters:
+    - id: content
+      type: System.String
+      description: A delimited CSV string.
+    return:
+      type: System.Object
+      description: IEnumerable&lt;dynamic>.
+    content.vb: Function Deserialize(content As String) As Object
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  id: Deserialize(Stream)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Stream)
+  nameWithType: ISerializer.Deserialize(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: Deserialize
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 130
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from a string to a list of dynamic objects \n"
+  example: []
+  syntax:
+    content: dynamic Deserialize(Stream content)
+    parameters:
+    - id: content
+      type: Stream
+      description: A delimited CSV string.
+    return:
+      type: System.Object
+      description: IEnumerable&lt;dynamic>.
+    content.vb: Function Deserialize(content As Stream) As Object
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.String)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.String)
+  id: Deserialize``1(System.String)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(String)
+  nameWithType: ISerializer.Deserialize<T>(String)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: Deserialize
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 140
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: >-
+      T Deserialize<T>(string content)
+          where T : class
+    parameters:
+    - id: content
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: List Of T
+    content.vb: Function Deserialize(Of T As Class)(content As String) As T
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  nameWithType.vb: ISerializer.Deserialize(Of T)(String)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(System.String)
+  name.vb: Deserialize(Of T)(String)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
+  id: Deserialize``1(Stream)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(Stream)
+  nameWithType: ISerializer.Deserialize<T>(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: Deserialize
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 149
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: >-
+      T Deserialize<T>(Stream stream)
+          where T : class
+    parameters:
+    - id: stream
+      type: Stream
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: List Of T
+    content.vb: Function Deserialize(Of T As Class)(stream As Stream) As T
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  nameWithType.vb: ISerializer.Deserialize(Of T)(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(Stream)
+  name.vb: Deserialize(Of T)(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
+  id: Deserialize(System.String,Type)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(String, Type)
+  nameWithType: ISerializer.Deserialize(String, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String, Type)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: Deserialize
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 159
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: object Deserialize(string content, Type type)
+    parameters:
+    - id: content
+      type: System.String
+      description: ''
+    - id: type
+      type: Type
+      description: The type.
+    return:
+      type: System.Object
+      description: System.Object.
+    content.vb: Function Deserialize(content As String, type As Type) As Object
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
+  id: Deserialize(Stream,Type)
+  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Stream, Type)
+  nameWithType: ISerializer.Deserialize(Stream, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream, Type)
+  type: Method
+  source:
+    remote:
+      path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+      branch: master
+      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+    id: Deserialize
+    path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
+    startLine: 168
+  assemblies:
+  - DotNetHelper.Serialization.Abstractions
+  namespace: DotNetHelper.Serialization.Abstractions.Interface
+  summary: "\nDeserializes from string.\n"
+  example: []
+  syntax:
+    content: object Deserialize(Stream stream, Type type)
+    parameters:
+    - id: stream
+      type: Stream
+      description: ''
+    - id: type
+      type: Type
+      description: The type.
+    return:
+      type: System.Object
+      description: System.Object.
+    content.vb: Function Deserialize(stream As Stream, type As Type) As Object
+  overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+references:
+- uid: DotNetHelper.Serialization.Abstractions.Interface
+  commentId: N:DotNetHelper.Serialization.Abstractions.Interface
+  name: DotNetHelper.Serialization.Abstractions.Interface
+  nameWithType: DotNetHelper.Serialization.Abstractions.Interface
+  fullName: DotNetHelper.Serialization.Abstractions.Interface
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
+  name: SerializeToStream
+  nameWithType: ISerializer.SerializeToStream
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString
+  name: SerializeToString
+  nameWithType: ISerializer.SerializeToString
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
+  name: DeserializeToList
+  nameWithType: ISerializer.DeserializeToList
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
+- uid: List{System.Object}
+  commentId: '!:List{System.Object}'
+  definition: List`1
+  name: List<Object>
+  nameWithType: List<Object>
+  fullName: List<System.Object>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List{{T}}
+  commentId: '!:List{``0}'
+  definition: List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
+  name: Deserialize
+  nameWithType: ISerializer.Deserialize
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize

@@ -1,0 +1,11 @@
+### YamlMime:TableOfContent
+- uid: DotNetHelper.Serialization.Abstractions
+  name: DotNetHelper.Serialization.Abstractions
+  items:
+  - uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary
+    name: DataSourceBinary
+- uid: DotNetHelper.Serialization.Abstractions.Interface
+  name: DotNetHelper.Serialization.Abstractions.Interface
+  items:
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
+    name: ISerializer
