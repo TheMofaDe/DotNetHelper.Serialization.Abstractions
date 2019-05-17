@@ -141,7 +141,7 @@ namespace DotNetHelper.Serialization.Abstractions
             var bytes = Encoding.GetBytes(content);
             using (var memoryStream = new MemoryStream(bytes))
             {
-                return (dynamic)Formatter.Deserialize(memoryStream);
+                return Formatter.Deserialize(memoryStream);
             }
         }
 
