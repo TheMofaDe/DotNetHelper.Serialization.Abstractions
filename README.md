@@ -1,4 +1,4 @@
-# DotNet Starter Template
+# DotNetHelper.Serialization.Abstractions
 
 
 | Package  | Tests | Coverage |

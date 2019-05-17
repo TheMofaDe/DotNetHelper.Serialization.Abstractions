@@ -5,22 +5,22 @@ items:
   id: ISerializer
   parent: DotNetHelper.Serialization.Abstractions.Interface
   children:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,System.Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.String)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,System.Type)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.String)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
   langs:
@@ -34,7 +34,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: ISerializer
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 6
@@ -46,28 +46,46 @@ items:
     content.vb: >-
       Public Interface ISerializer
           Inherits IConvertible
+  inheritedMembers:
+  - System.IConvertible.GetTypeCode
+  - System.IConvertible.ToBoolean(System.IFormatProvider)
+  - System.IConvertible.ToChar(System.IFormatProvider)
+  - System.IConvertible.ToSByte(System.IFormatProvider)
+  - System.IConvertible.ToByte(System.IFormatProvider)
+  - System.IConvertible.ToInt16(System.IFormatProvider)
+  - System.IConvertible.ToUInt16(System.IFormatProvider)
+  - System.IConvertible.ToInt32(System.IFormatProvider)
+  - System.IConvertible.ToUInt32(System.IFormatProvider)
+  - System.IConvertible.ToInt64(System.IFormatProvider)
+  - System.IConvertible.ToUInt64(System.IFormatProvider)
+  - System.IConvertible.ToSingle(System.IFormatProvider)
+  - System.IConvertible.ToDouble(System.IFormatProvider)
+  - System.IConvertible.ToDecimal(System.IFormatProvider)
+  - System.IConvertible.ToDateTime(System.IFormatProvider)
+  - System.IConvertible.ToString(System.IFormatProvider)
+  - System.IConvertible.ToType(System.Type,System.IFormatProvider)
   modifiers.csharp:
   - public
   - interface
   modifiers.vb:
   - Public
   - Interface
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
-  id: SerializeToStream``1(``0,Stream,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
+  id: SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: SerializeToStream<T>(T, Stream, Int32, Boolean)
   nameWithType: ISerializer.SerializeToStream<T>(T, Stream, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, Stream, System.Int32, System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.IO.Stream, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 16
@@ -85,7 +103,7 @@ items:
       type: '{T}'
       description: The obj.
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: The stream.
     - id: bufferSize
       type: System.Int32
@@ -97,25 +115,29 @@ items:
     - id: T
     content.vb: Sub SerializeToStream(Of T As Class)(obj As T, stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: obj
   nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Stream, Int32, Boolean)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, Stream, System.Int32, System.Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.IO.Stream, System.Int32, System.Boolean)
   name.vb: SerializeToStream(Of T)(T, Stream, Int32, Boolean)
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
-  id: SerializeToStream(System.Object,Type,Stream,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
+  id: SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: SerializeToStream(Object, Type, Stream, Int32, Boolean)
   nameWithType: ISerializer.SerializeToStream(Object, Type, Stream, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, Type, Stream, System.Int32, System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, System.Type, System.IO.Stream, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 28
@@ -131,10 +153,10 @@ items:
       type: System.Object
       description: The obj.
     - id: type
-      type: Type
+      type: System.Type
       description: ''
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: The stream.
     - id: bufferSize
       type: System.Int32
@@ -144,6 +166,10 @@ items:
       description: ''
     content.vb: Sub SerializeToStream(obj As Object, type As Type, stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: obj
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
   commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
   id: SerializeToStream``1(``0,System.Int32,System.Boolean)
@@ -159,7 +185,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 37
@@ -185,28 +211,32 @@ items:
     typeParameters:
     - id: T
     return:
-      type: Stream
+      type: System.IO.Stream
     content.vb: Function SerializeToStream(Of T As Class)(obj As T, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: obj
   nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
   fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
   name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
-  id: SerializeToStream(System.Object,Type,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  id: SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: SerializeToStream(Object, Type, Int32, Boolean)
   nameWithType: ISerializer.SerializeToStream(Object, Type, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, Type, System.Int32, System.Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 48
@@ -222,7 +252,7 @@ items:
       type: System.Object
       description: The obj.
     - id: type
-      type: Type
+      type: System.Type
       description: ''
     - id: bufferSize
       type: System.Int32
@@ -231,9 +261,13 @@ items:
       type: System.Boolean
       description: ''
     return:
-      type: Stream
+      type: System.IO.Stream
     content.vb: Function SerializeToStream(obj As Object, type As Type, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: obj
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
   commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(System.Object)
   id: SerializeToString(System.Object)
@@ -249,7 +283,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 56
@@ -269,6 +303,10 @@ items:
       description: System.String.
     content.vb: Function SerializeToString(obj As Object) As String
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: obj
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
   commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString``1(``0)
   id: SerializeToString``1(``0)
@@ -284,7 +322,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 64
@@ -308,6 +346,10 @@ items:
       description: System.String.
     content.vb: Function SerializeToString(Of T As Class)(obj As T) As String
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: obj
   nameWithType.vb: ISerializer.SerializeToString(Of T)(T)
   fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString(Of T)(T)
   name.vb: SerializeToString(Of T)(T)
@@ -326,7 +368,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 71
@@ -342,26 +384,26 @@ items:
       type: System.String
       description: A delimited CSV string.
     return:
-      type: List{System.Object}
+      type: System.Collections.Generic.List{System.Object}
       description: IEnumerable&lt;dynamic>.
     content.vb: Function DeserializeToList(content As String) As List(Of Object)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
-  id: DeserializeToList(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  id: DeserializeToList(System.IO.Stream)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: DeserializeToList(Stream)
   nameWithType: ISerializer.DeserializeToList(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 78
@@ -374,10 +416,10 @@ items:
     content: List<dynamic> DeserializeToList(Stream stream)
     parameters:
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: A delimited CSV string.
     return:
-      type: List{System.Object}
+      type: System.Collections.Generic.List{System.Object}
       description: IEnumerable&lt;dynamic>.
     content.vb: Function DeserializeToList(stream As Stream) As List(Of Object)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
@@ -396,7 +438,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 88
@@ -417,29 +459,33 @@ items:
     - id: T
       description: ''
     return:
-      type: List{{T}}
+      type: System.Collections.Generic.List{{T}}
       description: List Of T
     content.vb: Function DeserializeToList(Of T As Class)(content As String) As List(Of T)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: text
   nameWithType.vb: ISerializer.DeserializeToList(Of T)(String)
   fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(System.String)
   name.vb: DeserializeToList(Of T)(String)
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(Stream)
-  id: DeserializeToList``1(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
+  id: DeserializeToList``1(System.IO.Stream)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: DeserializeToList<T>(Stream)
   nameWithType: ISerializer.DeserializeToList<T>(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(System.IO.Stream)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 97
@@ -454,35 +500,39 @@ items:
           where T : class
     parameters:
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: ''
     typeParameters:
     - id: T
       description: ''
     return:
-      type: List{{T}}
+      type: System.Collections.Generic.List{{T}}
       description: List Of T
     content.vb: Function DeserializeToList(Of T As Class)(stream As Stream) As List(Of T)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: text
   nameWithType.vb: ISerializer.DeserializeToList(Of T)(Stream)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(System.IO.Stream)
   name.vb: DeserializeToList(Of T)(Stream)
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,Type)
-  id: DeserializeToList(System.String,Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,System.Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String,System.Type)
+  id: DeserializeToList(System.String,System.Type)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: DeserializeToList(String, Type)
   nameWithType: ISerializer.DeserializeToList(String, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.String, System.Type)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 107
@@ -498,29 +548,33 @@ items:
       type: System.String
       description: ''
     - id: type
-      type: Type
+      type: System.Type
       description: The type.
     return:
-      type: List{System.Object}
+      type: System.Collections.Generic.List{System.Object}
       description: System.Object.
     content.vb: Function DeserializeToList(content As String, type As Type) As List(Of Object)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream,Type)
-  id: DeserializeToList(Stream,Type)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: json
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
+  id: DeserializeToList(System.IO.Stream,System.Type)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: DeserializeToList(Stream, Type)
   nameWithType: ISerializer.DeserializeToList(Stream, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Stream, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream, System.Type)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 116
@@ -533,16 +587,20 @@ items:
     content: List<object> DeserializeToList(Stream stream, Type type)
     parameters:
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: ''
     - id: type
-      type: Type
+      type: System.Type
       description: The type.
     return:
-      type: List{System.Object}
+      type: System.Collections.Generic.List{System.Object}
       description: System.Object.
     content.vb: Function DeserializeToList(stream As Stream, type As Type) As List(Of Object)
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: json
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
   commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String)
   id: Deserialize(System.String)
@@ -558,7 +616,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 123
@@ -578,22 +636,22 @@ items:
       description: IEnumerable&lt;dynamic>.
     content.vb: Function Deserialize(content As String) As Object
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
-  id: Deserialize(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  id: Deserialize(System.IO.Stream)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: Deserialize(Stream)
   nameWithType: ISerializer.Deserialize(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 130
@@ -606,7 +664,7 @@ items:
     content: dynamic Deserialize(Stream content)
     parameters:
     - id: content
-      type: Stream
+      type: System.IO.Stream
       description: A delimited CSV string.
     return:
       type: System.Object
@@ -628,7 +686,7 @@ items:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 140
@@ -653,25 +711,29 @@ items:
       description: List Of T
     content.vb: Function Deserialize(Of T As Class)(content As String) As T
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: text
   nameWithType.vb: ISerializer.Deserialize(Of T)(String)
   fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(System.String)
   name.vb: Deserialize(Of T)(String)
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(Stream)
-  id: Deserialize``1(Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
+  id: Deserialize``1(System.IO.Stream)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: Deserialize<T>(Stream)
   nameWithType: ISerializer.Deserialize<T>(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(Stream)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(System.IO.Stream)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 149
@@ -686,7 +748,7 @@ items:
           where T : class
     parameters:
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: ''
     typeParameters:
     - id: T
@@ -696,25 +758,29 @@ items:
       description: List Of T
     content.vb: Function Deserialize(Of T As Class)(stream As Stream) As T
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: text
   nameWithType.vb: ISerializer.Deserialize(Of T)(Stream)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(System.IO.Stream)
   name.vb: Deserialize(Of T)(Stream)
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,Type)
-  id: Deserialize(System.String,Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,System.Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String,System.Type)
+  id: Deserialize(System.String,System.Type)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: Deserialize(String, Type)
   nameWithType: ISerializer.Deserialize(String, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.String, System.Type)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 159
@@ -730,29 +796,33 @@ items:
       type: System.String
       description: ''
     - id: type
-      type: Type
+      type: System.Type
       description: The type.
     return:
       type: System.Object
       description: System.Object.
     content.vb: Function Deserialize(content As String, type As Type) As Object
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream,Type)
-  id: Deserialize(Stream,Type)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: json
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
+  id: Deserialize(System.IO.Stream,System.Type)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   langs:
   - csharp
   - vb
   name: Deserialize(Stream, Type)
   nameWithType: ISerializer.Deserialize(Stream, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Stream, Type)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream, System.Type)
   type: Method
   source:
     remote:
       path: src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
       branch: master
-      repo: https://github.com/TheMofaDe/DotNet-Starter-Template
+      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/Interface/ISerializer.cs
     startLine: 168
@@ -765,22 +835,745 @@ items:
     content: object Deserialize(Stream stream, Type type)
     parameters:
     - id: stream
-      type: Stream
+      type: System.IO.Stream
       description: ''
     - id: type
-      type: Type
+      type: System.Type
       description: The type.
     return:
       type: System.Object
       description: System.Object.
     content.vb: Function Deserialize(stream As Stream, type As Type) As Object
   overload: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: json
 references:
 - uid: DotNetHelper.Serialization.Abstractions.Interface
   commentId: N:DotNetHelper.Serialization.Abstractions.Interface
   name: DotNetHelper.Serialization.Abstractions.Interface
   nameWithType: DotNetHelper.Serialization.Abstractions.Interface
   fullName: DotNetHelper.Serialization.Abstractions.Interface
+- uid: System.IConvertible.GetTypeCode
+  commentId: M:System.IConvertible.GetTypeCode
+  parent: System.IConvertible
+  isExternal: true
+  name: GetTypeCode()
+  nameWithType: IConvertible.GetTypeCode()
+  fullName: System.IConvertible.GetTypeCode()
+  spec.csharp:
+  - uid: System.IConvertible.GetTypeCode
+    name: GetTypeCode
+    nameWithType: IConvertible.GetTypeCode
+    fullName: System.IConvertible.GetTypeCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.GetTypeCode
+    name: GetTypeCode
+    nameWithType: IConvertible.GetTypeCode
+    fullName: System.IConvertible.GetTypeCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToBoolean(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToBoolean(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToBoolean(IFormatProvider)
+  nameWithType: IConvertible.ToBoolean(IFormatProvider)
+  fullName: System.IConvertible.ToBoolean(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
+    name: ToBoolean
+    nameWithType: IConvertible.ToBoolean
+    fullName: System.IConvertible.ToBoolean
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
+    name: ToBoolean
+    nameWithType: IConvertible.ToBoolean
+    fullName: System.IConvertible.ToBoolean
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToChar(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToChar(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToChar(IFormatProvider)
+  nameWithType: IConvertible.ToChar(IFormatProvider)
+  fullName: System.IConvertible.ToChar(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToChar(System.IFormatProvider)
+    name: ToChar
+    nameWithType: IConvertible.ToChar
+    fullName: System.IConvertible.ToChar
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToChar(System.IFormatProvider)
+    name: ToChar
+    nameWithType: IConvertible.ToChar
+    fullName: System.IConvertible.ToChar
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToSByte(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToSByte(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToSByte(IFormatProvider)
+  nameWithType: IConvertible.ToSByte(IFormatProvider)
+  fullName: System.IConvertible.ToSByte(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToSByte(System.IFormatProvider)
+    name: ToSByte
+    nameWithType: IConvertible.ToSByte
+    fullName: System.IConvertible.ToSByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToSByte(System.IFormatProvider)
+    name: ToSByte
+    nameWithType: IConvertible.ToSByte
+    fullName: System.IConvertible.ToSByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToByte(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToByte(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToByte(IFormatProvider)
+  nameWithType: IConvertible.ToByte(IFormatProvider)
+  fullName: System.IConvertible.ToByte(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToByte(System.IFormatProvider)
+    name: ToByte
+    nameWithType: IConvertible.ToByte
+    fullName: System.IConvertible.ToByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToByte(System.IFormatProvider)
+    name: ToByte
+    nameWithType: IConvertible.ToByte
+    fullName: System.IConvertible.ToByte
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToInt16(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToInt16(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToInt16(IFormatProvider)
+  nameWithType: IConvertible.ToInt16(IFormatProvider)
+  fullName: System.IConvertible.ToInt16(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToInt16(System.IFormatProvider)
+    name: ToInt16
+    nameWithType: IConvertible.ToInt16
+    fullName: System.IConvertible.ToInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToInt16(System.IFormatProvider)
+    name: ToInt16
+    nameWithType: IConvertible.ToInt16
+    fullName: System.IConvertible.ToInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToUInt16(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToUInt16(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToUInt16(IFormatProvider)
+  nameWithType: IConvertible.ToUInt16(IFormatProvider)
+  fullName: System.IConvertible.ToUInt16(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
+    name: ToUInt16
+    nameWithType: IConvertible.ToUInt16
+    fullName: System.IConvertible.ToUInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
+    name: ToUInt16
+    nameWithType: IConvertible.ToUInt16
+    fullName: System.IConvertible.ToUInt16
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToInt32(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToInt32(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToInt32(IFormatProvider)
+  nameWithType: IConvertible.ToInt32(IFormatProvider)
+  fullName: System.IConvertible.ToInt32(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToInt32(System.IFormatProvider)
+    name: ToInt32
+    nameWithType: IConvertible.ToInt32
+    fullName: System.IConvertible.ToInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToInt32(System.IFormatProvider)
+    name: ToInt32
+    nameWithType: IConvertible.ToInt32
+    fullName: System.IConvertible.ToInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToUInt32(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToUInt32(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToUInt32(IFormatProvider)
+  nameWithType: IConvertible.ToUInt32(IFormatProvider)
+  fullName: System.IConvertible.ToUInt32(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
+    name: ToUInt32
+    nameWithType: IConvertible.ToUInt32
+    fullName: System.IConvertible.ToUInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
+    name: ToUInt32
+    nameWithType: IConvertible.ToUInt32
+    fullName: System.IConvertible.ToUInt32
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToInt64(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToInt64(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToInt64(IFormatProvider)
+  nameWithType: IConvertible.ToInt64(IFormatProvider)
+  fullName: System.IConvertible.ToInt64(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToInt64(System.IFormatProvider)
+    name: ToInt64
+    nameWithType: IConvertible.ToInt64
+    fullName: System.IConvertible.ToInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToInt64(System.IFormatProvider)
+    name: ToInt64
+    nameWithType: IConvertible.ToInt64
+    fullName: System.IConvertible.ToInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToUInt64(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToUInt64(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToUInt64(IFormatProvider)
+  nameWithType: IConvertible.ToUInt64(IFormatProvider)
+  fullName: System.IConvertible.ToUInt64(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
+    name: ToUInt64
+    nameWithType: IConvertible.ToUInt64
+    fullName: System.IConvertible.ToUInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
+    name: ToUInt64
+    nameWithType: IConvertible.ToUInt64
+    fullName: System.IConvertible.ToUInt64
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToSingle(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToSingle(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToSingle(IFormatProvider)
+  nameWithType: IConvertible.ToSingle(IFormatProvider)
+  fullName: System.IConvertible.ToSingle(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToSingle(System.IFormatProvider)
+    name: ToSingle
+    nameWithType: IConvertible.ToSingle
+    fullName: System.IConvertible.ToSingle
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToSingle(System.IFormatProvider)
+    name: ToSingle
+    nameWithType: IConvertible.ToSingle
+    fullName: System.IConvertible.ToSingle
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToDouble(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToDouble(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToDouble(IFormatProvider)
+  nameWithType: IConvertible.ToDouble(IFormatProvider)
+  fullName: System.IConvertible.ToDouble(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToDouble(System.IFormatProvider)
+    name: ToDouble
+    nameWithType: IConvertible.ToDouble
+    fullName: System.IConvertible.ToDouble
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToDouble(System.IFormatProvider)
+    name: ToDouble
+    nameWithType: IConvertible.ToDouble
+    fullName: System.IConvertible.ToDouble
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToDecimal(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToDecimal(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToDecimal(IFormatProvider)
+  nameWithType: IConvertible.ToDecimal(IFormatProvider)
+  fullName: System.IConvertible.ToDecimal(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
+    name: ToDecimal
+    nameWithType: IConvertible.ToDecimal
+    fullName: System.IConvertible.ToDecimal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
+    name: ToDecimal
+    nameWithType: IConvertible.ToDecimal
+    fullName: System.IConvertible.ToDecimal
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToDateTime(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToDateTime(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToDateTime(IFormatProvider)
+  nameWithType: IConvertible.ToDateTime(IFormatProvider)
+  fullName: System.IConvertible.ToDateTime(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
+    name: ToDateTime
+    nameWithType: IConvertible.ToDateTime
+    fullName: System.IConvertible.ToDateTime
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
+    name: ToDateTime
+    nameWithType: IConvertible.ToDateTime
+    fullName: System.IConvertible.ToDateTime
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToString(System.IFormatProvider)
+  commentId: M:System.IConvertible.ToString(System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToString(IFormatProvider)
+  nameWithType: IConvertible.ToString(IFormatProvider)
+  fullName: System.IConvertible.ToString(System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToString(System.IFormatProvider)
+    name: ToString
+    nameWithType: IConvertible.ToString
+    fullName: System.IConvertible.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToString(System.IFormatProvider)
+    name: ToString
+    nameWithType: IConvertible.ToString
+    fullName: System.IConvertible.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
+  commentId: M:System.IConvertible.ToType(System.Type,System.IFormatProvider)
+  parent: System.IConvertible
+  isExternal: true
+  name: ToType(Type, IFormatProvider)
+  nameWithType: IConvertible.ToType(Type, IFormatProvider)
+  fullName: System.IConvertible.ToType(System.Type, System.IFormatProvider)
+  spec.csharp:
+  - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
+    name: ToType
+    nameWithType: IConvertible.ToType
+    fullName: System.IConvertible.ToType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
+    name: ToType
+    nameWithType: IConvertible.ToType
+    fullName: System.IConvertible.ToType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IConvertible
+  commentId: T:System.IConvertible
+  parent: System
+  isExternal: true
+  name: IConvertible
+  nameWithType: IConvertible
+  fullName: System.IConvertible
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream*
   commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
   name: SerializeToStream
@@ -792,17 +1585,23 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: Stream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
   isExternal: true
   name: Stream
   nameWithType: Stream
-  fullName: Stream
+  fullName: System.IO.Stream
 - uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
 - uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
   name: Boolean
   nameWithType: Boolean
@@ -811,23 +1610,34 @@ references:
   name: T
   nameWithType: T
   fullName: T
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
 - uid: System.Object
   commentId: T:System.Object
+  parent: System
   isExternal: true
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Type
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
   isExternal: true
   name: Type
   nameWithType: Type
-  fullName: Type
+  fullName: System.Type
 - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString*
   commentId: Overload:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString
   name: SerializeToString
   nameWithType: ISerializer.SerializeToString
   fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToString
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
   name: String
   nameWithType: String
@@ -837,20 +1647,21 @@ references:
   name: DeserializeToList
   nameWithType: ISerializer.DeserializeToList
   fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
-- uid: List{System.Object}
-  commentId: '!:List{System.Object}'
-  definition: List`1
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
   name: List<Object>
   nameWithType: List<Object>
-  fullName: List<System.Object>
+  fullName: System.Collections.Generic.List<System.Object>
   nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
+  fullName.vb: System.Collections.Generic.List(Of )
   name.vb: List(Of )
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: <
     nameWithType: <
@@ -863,10 +1674,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -874,58 +1685,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: List`1
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
-  spec.csharp:
-  - uid: List`1
-    name: List
-    nameWithType: List
-    fullName: List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: List`1
-    name: List
-    nameWithType: List
-    fullName: List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: List{{T}}
-  commentId: '!:List{``0}'
-  definition: List`1
   name: List<T>
   nameWithType: List<T>
-  fullName: List<T>
+  fullName: System.Collections.Generic.List<T>
   nameWithType.vb: List(Of T)
-  fullName.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
   name.vb: List(Of T)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: <
     nameWithType: <
@@ -937,10 +1710,56 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
