@@ -105,7 +105,7 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <param name="type">The type.</param>
         /// <returns>System.Object.</returns>
         /// <exception cref="System.ArgumentNullException">json</exception>
-        List<object> DeserializeToList(string content, Type type);
+        //List<object> DeserializeToList(string content, Type type);
 
         /// <summary>
         /// Deserializes from string.
@@ -114,12 +114,12 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <param name="type">The type.</param>
         /// <returns>System.Object.</returns>
         /// <exception cref="System.ArgumentNullException">json</exception>
-        List<object> DeserializeToList(Stream stream, Type type);
+        //List<object> DeserializeToList(Stream stream, Type type);
 
         /// <summary>
         /// Deserializes from a string to a list of dynamic objects 
         /// </summary>
-        /// <param name="content">A delimited CSV string.</param>
+        /// <param name="content"></param>
         /// <returns>IEnumerable&lt;dynamic&gt;.</returns>
         dynamic Deserialize(string content);
 
