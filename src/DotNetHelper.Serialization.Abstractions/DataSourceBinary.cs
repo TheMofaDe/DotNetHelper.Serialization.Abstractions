@@ -49,7 +49,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }
         }
 
-        public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
+        public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024)
         {
             obj.IsNullThrow(nameof(obj));
             var stream = new MemoryStream();
@@ -57,21 +57,13 @@ namespace DotNetHelper.Serialization.Abstractions
             {
                 Formatter.Serialize(stream, obj);
             }
-            if (leaveStreamOpen)
-            {
-                stream.Seek(0, SeekOrigin.Begin);
-            }
-            else
-            {
-                stream.Dispose();
-            }
             return stream;
         }
 
 
-        public Stream SerializeToStream<T>(T obj, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
+        public Stream SerializeToStream<T>(T obj, int bufferSize = 1024) where T : class
         {
-           return  SerializeToStream(obj, typeof(T), bufferSize, leaveStreamOpen);
+           return  SerializeToStream(obj, typeof(T), bufferSize);
         }
 
 

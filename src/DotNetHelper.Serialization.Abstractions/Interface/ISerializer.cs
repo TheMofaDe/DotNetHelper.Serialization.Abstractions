@@ -33,9 +33,8 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// </summary>
         /// <param name="obj">The obj.</param>
         /// <param name="bufferSize"></param>
-        /// <param name="leaveStreamOpen"></param>
         /// <exception cref="System.ArgumentNullException">obj</exception>
-        Stream SerializeToStream<T>(T obj, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        Stream SerializeToStream<T>(T obj, int bufferSize = 1024) where T : class;
 
 
         /// <summary>
@@ -44,9 +43,8 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <param name="obj">The obj.</param>
         /// <param name="type"></param>
         /// <param name="bufferSize"></param>
-        /// <param name="leaveStreamOpen"></param>
         /// <exception cref="System.ArgumentNullException">obj</exception>
-        Stream SerializeToStream(object obj, Type type,  int bufferSize = 1024, bool leaveStreamOpen = false);
+        Stream SerializeToStream(object obj, Type type,  int bufferSize = 1024);
 
         /// <summary>
         /// Serializes to string.
@@ -75,6 +73,8 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// Deserializes from a string to a list of dynamic objects 
         /// </summary>
         /// <param name="stream">A delimited CSV string.</param>
+        /// <param name="bufferSize"></param>
+        /// <param name="leaveStreamOpen"></param>
         /// <returns>IEnumerable&lt;dynamic&gt;.</returns>
         List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
 
@@ -93,6 +93,8 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="stream"></param>
+        /// <param name="bufferSize"></param>
+        /// <param name="leaveStreamOpen"></param>
         /// <returns>List Of T</returns>
         /// <exception cref="System.ArgumentNullException">text</exception>
         List<T> DeserializeToList<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
@@ -107,14 +109,7 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <exception cref="System.ArgumentNullException">json</exception>
         List<object> DeserializeToList(string content, Type type);
 
-        /// <summary>
-        /// Deserializes from string.
-        /// </summary>
-        /// <param name="stream"></param>
-        /// <param name="type">The type.</param>
-        /// <returns>System.Object.</returns>
-        /// <exception cref="System.ArgumentNullException">json</exception>
-        //List<object> DeserializeToList(Stream stream, Type type);
+
 
         /// <summary>
         /// Deserializes from a string to a list of dynamic objects 
@@ -126,9 +121,11 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <summary>
         /// Deserializes from a string to a list of dynamic objects 
         /// </summary>
-        /// <param name="content">A delimited CSV string.</param>
+        /// <param name="stream">A stream.</param>
+        /// <param name="bufferSize"></param>
+        /// <param name="leaveStreamOpen"></param>
         /// <returns>IEnumerable&lt;dynamic&gt;.</returns>
-        dynamic Deserialize(Stream content, int bufferSize = 1024, bool leaveStreamOpen = false);
+        dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
 
 
         /// <summary>
@@ -145,6 +142,8 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="stream"></param>
+        /// <param name="bufferSize"></param>
+        /// <param name="leaveStreamOpen"></param>
         /// <returns>List Of T</returns>
         /// <exception cref="System.ArgumentNullException">text</exception>
         T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
@@ -164,6 +163,8 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// </summary>
         /// <param name="stream"></param>
         /// <param name="type">The type.</param>
+        /// <param name="bufferSize"></param>
+        /// <param name="leaveStreamOpen"></param>
         /// <returns>System.Object.</returns>
         /// <exception cref="System.ArgumentNullException">json</exception>
         object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false);
