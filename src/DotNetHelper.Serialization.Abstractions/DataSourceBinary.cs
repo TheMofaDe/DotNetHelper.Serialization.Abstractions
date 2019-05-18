@@ -103,7 +103,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }      
         }
 
-        public List<dynamic> DeserializeToList(Stream stream)
+        public List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             return (List<dynamic>)Formatter.Deserialize(stream);
         }
@@ -117,7 +117,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }
         }
 
-        public List<T> DeserializeToList<T>(Stream stream) where T : class
+        public List<T> DeserializeToList<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
         {
             return (List<T>)Formatter.Deserialize(stream);
         }
@@ -131,7 +131,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }
         }
 
-        public List<object> DeserializeToList(Stream stream, Type type)
+        public List<object> DeserializeToList(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             return (List<object>)Formatter.Deserialize(stream);
         }
@@ -145,7 +145,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }
         }
 
-        public dynamic Deserialize(Stream stream)
+        public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             return (List<object>)Formatter.Deserialize(stream);
         }
@@ -159,7 +159,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }
         }
 
-        public T Deserialize<T>(Stream stream) where T : class
+        public T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
         {
             return (T)Formatter.Deserialize(stream);
         }
@@ -173,7 +173,7 @@ namespace DotNetHelper.Serialization.Abstractions
             }
         }
 
-        public object Deserialize(Stream stream, Type type)
+        public object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
             return Formatter.Deserialize(stream);
         }
