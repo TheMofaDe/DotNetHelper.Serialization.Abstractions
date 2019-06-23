@@ -35,6 +35,11 @@ namespace DotNetHelper.Serialization.Abstractions
             SerializeToStream(obj, typeof(T), stream, bufferSize, leaveStreamOpen);
         }
 
+        public void SerializeListToStream<T>(IEnumerable<T> objects, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
+        {
+            SerializeToStream(objects, typeof(T), stream, bufferSize, leaveStreamOpen);
+        }
+
         public void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         { 
             obj.IsNullThrow(nameof(obj));
@@ -47,6 +52,15 @@ namespace DotNetHelper.Serialization.Abstractions
             {
                 stream.Dispose();
             }
+        }
+
+        public Stream SerializeListToStream<T>(IEnumerable<T> objects, int bufferSize = 1024) where T : class
+        {
+            var stream = new MemoryStream();
+            objects.IsNullThrow(nameof(objects));
+            Formatter.Serialize(stream, objects);
+            stream.Seek(0, SeekOrigin.Begin);
+            return stream;
         }
 
         public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024)
@@ -72,16 +86,25 @@ namespace DotNetHelper.Serialization.Abstractions
         {
             using (var stream = SerializeToStream(obj, obj.GetType()))
             {
-               var sr = new StreamReader(stream, Encoding, true, 1024, false);
+               var sr = new StreamReader(stream, Encoding, false, 1024, false);
                 return sr.ReadToEnd();
             }
         }
 
         public string SerializeToString<T>(T obj) where T : class
         {
-            using (var stream = SerializeToStream(obj, obj.GetType()))
+            using (var stream = SerializeToStream(obj, obj.GetType(),1024))
             {
-                var sr = new StreamReader(stream, Encoding, true, 1024, false);
+                var sr = new StreamReader(stream, Encoding, false, 1024, false);
+                return sr.ReadToEnd();
+            }
+        }
+
+        public string SerializeListToString<T>(IEnumerable<T> obj) where T : class
+        {
+            using (var stream = SerializeToStream(obj, obj.GetType(), 1024))
+            {
+                var sr = new StreamReader(stream, Encoding, false, 1024, false);
                 return sr.ReadToEnd();
             }
         }

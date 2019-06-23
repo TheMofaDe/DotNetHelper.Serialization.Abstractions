@@ -9,18 +9,28 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <summary>
         /// Serializes to stream.
         /// </summary>
-        /// <param name="obj">The obj.</param>
+        /// <param name="obj">The object.</param>
         /// <param name="stream">The stream.</param>
         /// <param name="bufferSize"></param>
         /// <param name="leaveStreamOpen"></param>
         /// <exception cref="System.ArgumentNullException">obj</exception>
         void SerializeToStream<T>(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
 
+        /// <summary>
+        /// Serializes the list to stream.
+        /// </summary>
+        /// <param name="objects">The objects.</param>
+        /// <param name="stream">The stream.</param>
+        /// <param name="bufferSize"></param>
+        /// <param name="leaveStreamOpen"></param>
+        /// <exception cref="System.ArgumentNullException">obj</exception>
+        void SerializeListToStream<T>(IEnumerable<T> objects, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+
 
         /// <summary>
         /// Serializes to stream.
         /// </summary>
-        /// <param name="obj">The obj.</param>
+        /// <param name="obj">The object.</param>
         /// <param name="type"></param>
         /// <param name="stream">The stream.</param>
         /// <param name="bufferSize"></param>
@@ -35,6 +45,14 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <param name="bufferSize"></param>
         /// <exception cref="System.ArgumentNullException">obj</exception>
         Stream SerializeToStream<T>(T obj, int bufferSize = 1024) where T : class;
+
+        /// <summary>
+        /// Serializes the list to stream.
+        /// </summary>
+        /// <param name="objects">The object.</param>
+        /// <param name="bufferSize"></param>
+        /// <exception cref="System.ArgumentNullException">obj</exception>
+        Stream SerializeListToStream<T>(IEnumerable<T> objects, int bufferSize = 1024) where T : class;
 
 
         /// <summary>
@@ -61,6 +79,14 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         /// <returns>System.String.</returns>
         /// <exception cref="System.ArgumentNullException">obj</exception>
         string SerializeToString<T>(T obj) where T : class;
+
+        /// <summary>
+        /// Serializes the list to string.
+        /// </summary>
+        /// <param name="obj">The obj.</param>
+        /// <returns>System.String.</returns>
+        /// <exception cref="System.ArgumentNullException">obj</exception>
+        string SerializeListToString<T>(IEnumerable<T> obj) where T : class;
 
         /// <summary>
         /// Deserializes from a string to a list of dynamic objects 
