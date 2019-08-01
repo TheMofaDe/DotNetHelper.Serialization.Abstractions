@@ -1,6 +1,6 @@
 # DotNetHelper.Serialization.Abstractions
 
-#### *DotNetHelper.Serialization.Abstractions is simply a serializer and deserializer contract and with a implementation of a binary serializer* 
+#### *DotNetHelper.Serialization.Abstractions is a lightweight serialization library. One serializer/deserializer interface. This library come with an ISerializer interface and an implementation of a binary serializer* 
 
 || [**Documentation**][Docs] • [**API**][Docs-API] • [**Tutorials**][Docs-Tutorials] ||  [**Change Log**][Changelogs] • || [**View on Github**][Github]|| 
 
@@ -14,9 +14,52 @@
 | **AppVeyor** | [![Build status](https://ci.appveyor.com/api/projects/status/9mog32m4mejqyd3i?svg=true)](https://ci.appveyor.com/project/TheMofaDe/dotnethelper-database)  | | |
 | **Azure Devops** | ![Build Status][azure-windows]  | ![Build Status][azure-linux]  | ![Build Status][azure-macOS] | 
 
-## Features
+## How to use
+ ```csharp 
+ var binarySerializer = new DataSourceBinary(); 
+ ```
 
-## Getting Started
+Now you have access to all the Apis you will ever need for a binary serializer  check them out
+```csharp 
+        
+        //Serialize an object to the provided stream
+        void SerializeToStream<T>(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+
+        //Serialize an object to a new instance of a stream and returns the stream
+        Stream SerializeToStream<T>(T obj, int bufferSize = 1024) where T : class;
+        Stream SerializeToStream(object obj, Type type,  int bufferSize = 1024);
+
+        //Serialize an object to a string
+        string SerializeToString(object obj);
+        string SerializeToString<T>(T obj) where T : class;
+
+        //Retrieve a list of either generics,objects,or dynamics from either a stream or string
+        List<dynamic> DeserializeToList(string content);
+        List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+        List<T> DeserializeToList<T>(string content) where T : class;
+        List<T> DeserializeToList<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        List<object> DeserializeToList(string content, Type type);
+
+        //Retrieve a dynamic object from String or stream
+        dynamic Deserialize(string content);
+        dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+
+        //Retrieve a strongly type from a string or stream
+        T Deserialize<T>(string content) where T : class;
+        T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        
+        //Retrieve a object from a string or stream
+        object Deserialize(string content, Type type);        
+        object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false);
+```
+
+
+## Serialization with Json
+[JSON LINK][Json]
+
+## Serialization with Csv
+[CSV LINK][Csv]
 
 ## Documentation
 For more information, please refer to the [Officials Docs][Docs]
@@ -35,6 +78,8 @@ For more information, please refer to the [Officials Docs][Docs]
 [WiX]: http://wixtoolset.org/
 [DocFx]: https://dotnet.github.io/docfx/
 [Github]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions
+[Json]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json
+[Csv]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Csv
 
 [Docs]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/index.html
 [Docs-API]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/api/DotNetHelper.Serialization.Abstractions.html

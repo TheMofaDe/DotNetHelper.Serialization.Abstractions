@@ -4,10 +4,10 @@ using System.IO;
 
 namespace DotNetHelper.Serialization.Abstractions.Interface
 {
-    public interface ISerializer //: IConvertible
+    public interface ISerializer 
     {
         /// <summary>
-        /// Serializes to stream.
+        /// Serializes the generic object to a new instance of a memory stream.
         /// </summary>
         /// <param name="obj">The obj.</param>
         /// <param name="stream">The stream.</param>
@@ -18,7 +18,7 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
 
 
         /// <summary>
-        /// Serializes to stream.
+        /// Serializes the object to the provided stream.
         /// </summary>
         /// <param name="obj">The obj.</param>
         /// <param name="type"></param>
@@ -29,7 +29,7 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
         void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
 
         /// <summary>
-        /// Serializes to stream.
+        /// Serializes the generic object to a new instance of a memory stream.
         /// </summary>
         /// <param name="obj">The obj.</param>
         /// <param name="bufferSize"></param>
@@ -38,7 +38,7 @@ namespace DotNetHelper.Serialization.Abstractions.Interface
 
 
         /// <summary>
-        /// Serializes to stream.
+        /// Serializes the object to a new instance of a memory stream.
         /// </summary>
         /// <param name="obj">The obj.</param>
         /// <param name="type"></param>

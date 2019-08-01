@@ -1,67 +1,58 @@
-# $safeprojectname$
+# DotNetHelper.Serialization.Abstractions
 
-#### *$safeprojectname$ takes your generic types or dynamic & anonymous objects and convert it to sql.* 
+#### *DotNetHelper.Serialization.Abstractions is a lightweight serialization library. One serializer/deserializer interface. This library come with an ISerializer interface and an implementation of a binary serializer* 
 
 || [**View on Github**][Github] || 
 
 
-## Features
-+ INSERT
-+ UPDATE
-+ DELETE
-+ UPSERT
-+ INSERT with OUTPUT Columns
-+ UPDATE with OUTPUT Columns
-+ DELETE with OUTPUT Columns
-+ UPSERT with OUTPUT Columns
-
-## Supported Databases
-+ SQLSERVER
-+ SQLITE
-+ MYSQL
-+ More to come
-
-
 ## How to use
-##### How to Use With Generics Types
-```csharp
-public class Employee {
-      public FirstName { get; set; }
-      public LastName  { get; set; }
-}
-            var sqlServerObjectToSql = new ObjectToSql(DataBaseType.SqlServer);
-            var insertSql = sqlServerObjectToSql.BuildQuery<Employee>("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert);
-// OR 
-            var insertSql = sqlServerObjectToSql.BuildQuery("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert,typeof(Employee));
+ ```csharp 
+ var binarySerializer = new DataSourceBinary(); 
+ ```
+
+Now you have access to all the Apis you will ever need for a binary serializer  check them out
+```csharp 
+        
+        //Serialize an object to the provided stream
+        void SerializeToStream<T>(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        void SerializeToStream(object obj, Type type, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+
+        //Serialize an object to a new instance of a stream and returns the stream
+        Stream SerializeToStream<T>(T obj, int bufferSize = 1024) where T : class;
+        Stream SerializeToStream(object obj, Type type,  int bufferSize = 1024);
+
+        //Serialize an object to a string
+        string SerializeToString(object obj);
+        string SerializeToString<T>(T obj) where T : class;
+
+        //Retrieve a list of either generics,objects,or dynamics from either a stream or string
+        List<dynamic> DeserializeToList(string content);
+        List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+        List<T> DeserializeToList<T>(string content) where T : class;
+        List<T> DeserializeToList<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        List<object> DeserializeToList(string content, Type type);
+
+        //Retrieve a dynamic object from String or stream
+        dynamic Deserialize(string content);
+        dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false);
+
+        //Retrieve a strongly type from a string or stream
+        T Deserialize<T>(string content) where T : class;
+        T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class;
+        
+        //Retrieve a object from a string or stream
+        object Deserialize(string content, Type type);        
+        object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false);
 ```
 
-##### How to Use With Dynamic Objects
-```csharp
-            var sqlServerObjectToSql = new ObjectToSql(DataBaseType.SqlServer);
-            dynamic record = new ExpandoObject();
-            record.FirstName = "John";
-            record.LastName = "Doe";
-            var insertSql = sqlServerObjectToSql.BuildQuery("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert,record);
-```
 
+## Serialization with Json
+[JSON LINK][Json]
 
-##### How to Use With Anonymous Objects
-```csharp
-            var sqlServerObjectToSql = new ObjectToSql(DataBaseType.SqlServer);
-            var anonymousObject = new { FirstName = "John" , LastName = "Doe"}
-            var insertSql = sqlServerObjectToSql.BuildQuery("TABLE NAME OR DEFAULT TO TYPE NAME", ActionType.Insert,anonymousObject);
-```
-##### Output
-```sql
-INSERT INTO TableNameGoHere ([FirstName],[LastName]) VALUES (@FirstName,@LastName)
-```
-
+## Serialization with Csv
+[CSV LINK][Csv]
 
 <!-- Links. -->
-
-[1]:  https://gist.github.com/davidfowl/ed7564297c61fe9ab814
-[2]: http://themofade.github.io/$safeprojectname$
-
 [Cake]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [Azure DevOps]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [AppVeyor]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
@@ -70,12 +61,22 @@ INSERT INTO TableNameGoHere ([FirstName],[LastName]) VALUES (@FirstName,@LastNam
 [Chocolately]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [WiX]: http://wixtoolset.org/
 [DocFx]: https://dotnet.github.io/docfx/
-[Github]: https://github.com/TheMofaDe/$safeprojectname$
+[Github]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions
+[Json]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Json
+[Csv]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Csv
 
-
-<!-- Documentation Links. -->
-[Docs]: https://themofade.github.io/$safeprojectname$/index.html
-[Docs-API]: https://themofade.github.io/$safeprojectname$/api/$safeprojectname$.Attribute.html
-[Docs-Tutorials]: https://themofade.github.io/$safeprojectname$/tutorials/index.html
+[Docs]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/index.html
+[Docs-API]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/api/DotNetHelper.Serialization.Abstractions.html
+[Docs-Tutorials]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/tutorials/index.html
 [Docs-samples]: https://dotnet.github.io/docfx/
 [Changelogs]: https://dotnet.github.io/docfx/
+
+
+[nuget-downloads]: https://img.shields.io/nuget/dt/DotNetHelper.Serialization.Abstractions.svg?style=flat-square
+[tests]: https://img.shields.io/appveyor/tests/TheMofaDe/DotNetHelper.Serialization.Abstractions.svg?style=flat-square
+[coverage-status]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=Windows
+[azure-windows]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=Windows
+[azure-linux]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=Linux
+[azure-macOS]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=macOS
+[app-veyor]: https://ci.appveyor.com/project/TheMofaDe/DotNetHelper.Serialization.Abstractions
+

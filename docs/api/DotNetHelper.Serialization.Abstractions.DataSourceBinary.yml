@@ -7,43 +7,26 @@ items:
   children:
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.#ctor(System.Text.Encoding,System.Runtime.Serialization.Formatters.Binary.BinaryFormatter)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Type)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String,System.Type)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.IO.Stream)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.String)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Type)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Type,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String,System.Type)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.IO.Stream)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.String)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Encoding
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.Formatter
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.Int32)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.IO.Stream,System.Int32,System.Boolean)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.IO.Stream,System.Int32,System.Boolean)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)
   - DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString``1(``0)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(System.Type,System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(System.IFormatProvider)
-  - DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(System.IFormatProvider)
   langs:
   - csharp
   - vb
@@ -58,20 +41,19 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DataSourceBinary
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
-    content: 'public class DataSourceBinary : ISerializer, IConvertible'
+    content: 'public class DataSourceBinary : ISerializer'
     content.vb: >-
       Public Class DataSourceBinary
-          Implements ISerializer, IConvertible
+          Implements ISerializer
   inheritance:
   - System.Object
   implements:
   - DotNetHelper.Serialization.Abstractions.Interface.ISerializer
-  - System.IConvertible
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -104,7 +86,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Formatter
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -139,7 +121,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Encoding
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -177,7 +159,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: .ctor
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -212,7 +194,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: .ctor
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -242,7 +224,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 32
+    startLine: 38
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -290,7 +272,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 37
+    startLine: 43
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -315,16 +297,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  id: SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object,System.Type,System.Int32)
+  id: SerializeToStream(System.Object,System.Type,System.Int32)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: SerializeToStream(Object, Type, Int32, Boolean)
-  nameWithType: DataSourceBinary.SerializeToStream(Object, Type, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
+  name: SerializeToStream(Object, Type, Int32)
+  nameWithType: DataSourceBinary.SerializeToStream(Object, Type, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(System.Object, System.Type, System.Int32)
   type: Method
   source:
     remote:
@@ -333,12 +315,12 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
-    content: public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
+    content: public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024)
     parameters:
     - id: obj
       type: System.Object
@@ -346,28 +328,26 @@ items:
       type: System.Type
     - id: bufferSize
       type: System.Int32
-    - id: leaveStreamOpen
-      type: System.Boolean
     return:
       type: System.IO.Stream
-    content.vb: Public Function SerializeToStream(obj As Object, type As Type, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
+    content.vb: Public Function SerializeToStream(obj As Object, type As Type, bufferSize As Integer = 1024) As Stream
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  id: SerializeToStream``1(``0,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream``1(``0,System.Int32)
+  id: SerializeToStream``1(``0,System.Int32)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType: DataSourceBinary.SerializeToStream<T>(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream<T>(T, System.Int32, System.Boolean)
+  name: SerializeToStream<T>(T, Int32)
+  nameWithType: DataSourceBinary.SerializeToStream<T>(T, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream<T>(T, System.Int32)
   type: Method
   source:
     remote:
@@ -376,36 +356,34 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToStream
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 71
+    startLine: 59
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
     content: >-
-      public Stream SerializeToStream<T>(T obj, int bufferSize = 1024, bool leaveStreamOpen = false)
+      public Stream SerializeToStream<T>(T obj, int bufferSize = 1024)
           where T : class
     parameters:
     - id: obj
       type: '{T}'
     - id: bufferSize
       type: System.Int32
-    - id: leaveStreamOpen
-      type: System.Boolean
     typeParameters:
     - id: T
     return:
       type: System.IO.Stream
-    content.vb: Public Function SerializeToStream(Of T As Class)(obj As T, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Stream
+    content.vb: Public Function SerializeToStream(Of T As Class)(obj As T, bufferSize As Integer = 1024) As Stream
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32,System.Boolean)
-  nameWithType.vb: DataSourceBinary.SerializeToStream(Of T)(T, Int32, Boolean)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32)
+  nameWithType.vb: DataSourceBinary.SerializeToStream(Of T)(T, Int32)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToStream(Of T)(T, System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
 - uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)
   commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.SerializeToString(System.Object)
   id: SerializeToString(System.Object)
@@ -424,7 +402,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 78
+    startLine: 66
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -461,7 +439,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: SerializeToString
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 87
+    startLine: 77
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -505,7 +483,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 96
+    startLine: 88
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -524,16 +502,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream)
-  id: DeserializeToList(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
+  id: DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: DeserializeToList(Stream)
-  nameWithType: DataSourceBinary.DeserializeToList(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream)
+  name: DeserializeToList(Stream, Int32, Boolean)
+  nameWithType: DataSourceBinary.DeserializeToList(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
@@ -542,21 +520,25 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 105
+    startLine: 96
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
-    content: public List<dynamic> DeserializeToList(Stream stream)
+    content: public List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
     parameters:
     - id: stream
       type: System.IO.Stream
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
     return:
       type: System.Collections.Generic.List{System.Object}
-    content.vb: Public Function DeserializeToList(stream As Stream) As List(Of Object)
+    content.vb: Public Function DeserializeToList(stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As List(Of Object)
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -579,7 +561,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 110
+    startLine: 105
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -605,16 +587,16 @@ items:
   - Public
   fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Of T)(System.String)
   name.vb: DeserializeToList(Of T)(String)
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.IO.Stream)
-  id: DeserializeToList``1(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
+  id: DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: DeserializeToList<T>(Stream)
-  nameWithType: DataSourceBinary.DeserializeToList<T>(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList<T>(System.IO.Stream)
+  name: DeserializeToList<T>(Stream, Int32, Boolean)
+  nameWithType: DataSourceBinary.DeserializeToList<T>(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList<T>(System.IO.Stream, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
@@ -623,32 +605,36 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 119
+    startLine: 113
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
     content: >-
-      public List<T> DeserializeToList<T>(Stream stream)
+      public List<T> DeserializeToList<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
           where T : class
     parameters:
     - id: stream
       type: System.IO.Stream
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
     typeParameters:
     - id: T
     return:
       type: System.Collections.Generic.List{{T}}
-    content.vb: Public Function DeserializeToList(Of T As Class)(stream As Stream) As List(Of T)
+    content.vb: Public Function DeserializeToList(Of T As Class)(stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As List(Of T)
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
-  nameWithType.vb: DataSourceBinary.DeserializeToList(Of T)(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
+  nameWithType.vb: DataSourceBinary.DeserializeToList(Of T)(Stream, Int32, Boolean)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Of T)(System.IO.Stream)
-  name.vb: DeserializeToList(Of T)(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(Of T)(System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: DeserializeToList(Of T)(Stream, Int32, Boolean)
 - uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String,System.Type)
   commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.String,System.Type)
   id: DeserializeToList(System.String,System.Type)
@@ -667,7 +653,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 124
+    startLine: 121
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -688,16 +674,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Type)
-  id: DeserializeToList(System.IO.Stream,System.Type)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  id: DeserializeToList(System.IO.Stream,System.Type,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: DeserializeToList(Stream, Type)
-  nameWithType: DataSourceBinary.DeserializeToList(Stream, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream, System.Type)
+  name: DeserializeToList(Stream, Type, Int32, Boolean)
+  nameWithType: DataSourceBinary.DeserializeToList(Stream, Type, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList(System.IO.Stream, System.Type, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
@@ -706,23 +692,25 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: DeserializeToList
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 133
+    startLine: 130
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
-    content: public List<object> DeserializeToList(Stream stream, Type type)
+    content: public List<object> DeserializeToList(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
     parameters:
     - id: stream
       type: System.IO.Stream
     - id: type
       type: System.Type
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
     return:
       type: System.Collections.Generic.List{System.Object}
-    content.vb: Public Function DeserializeToList(stream As Stream, type As Type) As List(Of Object)
+    content.vb: Public Function DeserializeToList(stream As Stream, type As Type, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As List(Of Object)
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.DeserializeToList*
-  implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -764,16 +752,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream)
-  id: Deserialize(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
+  id: Deserialize(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: Deserialize(Stream)
-  nameWithType: DataSourceBinary.Deserialize(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream)
+  name: Deserialize(Stream, Int32, Boolean)
+  nameWithType: DataSourceBinary.Deserialize(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
@@ -782,21 +770,25 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 147
+    startLine: 146
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
-    content: public dynamic Deserialize(Stream stream)
+    content: public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
     parameters:
     - id: stream
       type: System.IO.Stream
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
     return:
       type: System.Object
-    content.vb: Public Function Deserialize(stream As Stream) As Object
+    content.vb: Public Function Deserialize(stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Object
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -819,7 +811,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 152
+    startLine: 160
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -845,16 +837,16 @@ items:
   - Public
   fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Of T)(System.String)
   name.vb: Deserialize(Of T)(String)
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.IO.Stream)
-  id: Deserialize``1(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
+  id: Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: Deserialize<T>(Stream)
-  nameWithType: DataSourceBinary.Deserialize<T>(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize<T>(System.IO.Stream)
+  name: Deserialize<T>(Stream, Int32, Boolean)
+  nameWithType: DataSourceBinary.Deserialize<T>(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize<T>(System.IO.Stream, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
@@ -863,32 +855,36 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 161
+    startLine: 165
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
     content: >-
-      public T Deserialize<T>(Stream stream)
+      public T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
           where T : class
     parameters:
     - id: stream
       type: System.IO.Stream
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
     typeParameters:
     - id: T
     return:
       type: '{T}'
-    content.vb: Public Function Deserialize(Of T As Class)(stream As Stream) As T
+    content.vb: Public Function Deserialize(Of T As Class)(stream As Stream, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As T
   overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*
   implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
-  nameWithType.vb: DataSourceBinary.Deserialize(Of T)(Stream)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
+  nameWithType.vb: DataSourceBinary.Deserialize(Of T)(Stream, Int32, Boolean)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Of T)(System.IO.Stream)
-  name.vb: Deserialize(Of T)(Stream)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(Of T)(System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: Deserialize(Of T)(Stream, Int32, Boolean)
 - uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String,System.Type)
   commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.String,System.Type)
   id: Deserialize(System.String,System.Type)
@@ -907,7 +903,7 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 166
+    startLine: 173
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
@@ -928,16 +924,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Type)
-  id: Deserialize(System.IO.Stream,System.Type)
+- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  id: Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
   langs:
   - csharp
   - vb
-  name: Deserialize(Stream, Type)
-  nameWithType: DataSourceBinary.Deserialize(Stream, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream, System.Type)
+  name: Deserialize(Stream, Type, Int32, Boolean)
+  nameWithType: DataSourceBinary.Deserialize(Stream, Type, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize(System.IO.Stream, System.Type, System.Int32, System.Boolean)
   type: Method
   source:
     remote:
@@ -946,651 +942,27 @@ items:
       repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
     id: Deserialize
     path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 175
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public object Deserialize(Stream stream, Type type)
-    parameters:
-    - id: stream
-      type: System.IO.Stream
-    - id: type
-      type: System.Type
-    return:
-      type: System.Object
-    content.vb: Public Function Deserialize(stream As Stream, type As Type) As Object
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*
-  implements:
-  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
-  id: GetTypeCode
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: GetTypeCode()
-  nameWithType: DataSourceBinary.GetTypeCode()
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode()
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: GetTypeCode
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
     startLine: 181
   assemblies:
   - DotNetHelper.Serialization.Abstractions
   namespace: DotNetHelper.Serialization.Abstractions
   syntax:
-    content: public TypeCode GetTypeCode()
-    return:
-      type: System.TypeCode
-    content.vb: Public Function GetTypeCode As TypeCode
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode*
-  implements:
-  - System.IConvertible.GetTypeCode
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(System.IFormatProvider)
-  id: ToBoolean(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToBoolean(IFormatProvider)
-  nameWithType: DataSourceBinary.ToBoolean(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToBoolean
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 186
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public bool ToBoolean(IFormatProvider provider)
+    content: public object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
     parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Boolean
-    content.vb: Public Function ToBoolean(provider As IFormatProvider) As Boolean
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean*
-  implements:
-  - System.IConvertible.ToBoolean(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(System.IFormatProvider)
-  id: ToChar(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToChar(IFormatProvider)
-  nameWithType: DataSourceBinary.ToChar(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToChar
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 191
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public char ToChar(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Char
-    content.vb: Public Function ToChar(provider As IFormatProvider) As Char
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar*
-  implements:
-  - System.IConvertible.ToChar(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(System.IFormatProvider)
-  id: ToSByte(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToSByte(IFormatProvider)
-  nameWithType: DataSourceBinary.ToSByte(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToSByte
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 196
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public sbyte ToSByte(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.SByte
-    content.vb: Public Function ToSByte(provider As IFormatProvider) As SByte
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte*
-  implements:
-  - System.IConvertible.ToSByte(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(System.IFormatProvider)
-  id: ToByte(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToByte(IFormatProvider)
-  nameWithType: DataSourceBinary.ToByte(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToByte
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 201
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public byte ToByte(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Byte
-    content.vb: Public Function ToByte(provider As IFormatProvider) As Byte
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte*
-  implements:
-  - System.IConvertible.ToByte(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(System.IFormatProvider)
-  id: ToInt16(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToInt16(IFormatProvider)
-  nameWithType: DataSourceBinary.ToInt16(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToInt16
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 206
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public short ToInt16(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Int16
-    content.vb: Public Function ToInt16(provider As IFormatProvider) As Short
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16*
-  implements:
-  - System.IConvertible.ToInt16(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(System.IFormatProvider)
-  id: ToUInt16(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToUInt16(IFormatProvider)
-  nameWithType: DataSourceBinary.ToUInt16(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToUInt16
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 211
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public ushort ToUInt16(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.UInt16
-    content.vb: Public Function ToUInt16(provider As IFormatProvider) As UShort
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16*
-  implements:
-  - System.IConvertible.ToUInt16(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(System.IFormatProvider)
-  id: ToInt32(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToInt32(IFormatProvider)
-  nameWithType: DataSourceBinary.ToInt32(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToInt32
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 216
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public int ToInt32(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Int32
-    content.vb: Public Function ToInt32(provider As IFormatProvider) As Integer
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32*
-  implements:
-  - System.IConvertible.ToInt32(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(System.IFormatProvider)
-  id: ToUInt32(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToUInt32(IFormatProvider)
-  nameWithType: DataSourceBinary.ToUInt32(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToUInt32
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 221
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public uint ToUInt32(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.UInt32
-    content.vb: Public Function ToUInt32(provider As IFormatProvider) As UInteger
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32*
-  implements:
-  - System.IConvertible.ToUInt32(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(System.IFormatProvider)
-  id: ToInt64(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToInt64(IFormatProvider)
-  nameWithType: DataSourceBinary.ToInt64(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToInt64
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 226
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public long ToInt64(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Int64
-    content.vb: Public Function ToInt64(provider As IFormatProvider) As Long
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64*
-  implements:
-  - System.IConvertible.ToInt64(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(System.IFormatProvider)
-  id: ToUInt64(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToUInt64(IFormatProvider)
-  nameWithType: DataSourceBinary.ToUInt64(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToUInt64
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 231
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public ulong ToUInt64(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.UInt64
-    content.vb: Public Function ToUInt64(provider As IFormatProvider) As ULong
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64*
-  implements:
-  - System.IConvertible.ToUInt64(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(System.IFormatProvider)
-  id: ToSingle(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToSingle(IFormatProvider)
-  nameWithType: DataSourceBinary.ToSingle(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToSingle
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 236
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public float ToSingle(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Single
-    content.vb: Public Function ToSingle(provider As IFormatProvider) As Single
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle*
-  implements:
-  - System.IConvertible.ToSingle(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(System.IFormatProvider)
-  id: ToDouble(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToDouble(IFormatProvider)
-  nameWithType: DataSourceBinary.ToDouble(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToDouble
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 241
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public double ToDouble(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Double
-    content.vb: Public Function ToDouble(provider As IFormatProvider) As Double
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble*
-  implements:
-  - System.IConvertible.ToDouble(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(System.IFormatProvider)
-  id: ToDecimal(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToDecimal(IFormatProvider)
-  nameWithType: DataSourceBinary.ToDecimal(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToDecimal
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 246
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public decimal ToDecimal(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.Decimal
-    content.vb: Public Function ToDecimal(provider As IFormatProvider) As Decimal
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal*
-  implements:
-  - System.IConvertible.ToDecimal(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(System.IFormatProvider)
-  id: ToDateTime(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToDateTime(IFormatProvider)
-  nameWithType: DataSourceBinary.ToDateTime(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToDateTime
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 251
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public DateTime ToDateTime(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.DateTime
-    content.vb: Public Function ToDateTime(provider As IFormatProvider) As Date
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime*
-  implements:
-  - System.IConvertible.ToDateTime(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(System.IFormatProvider)
-  id: ToString(System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToString(IFormatProvider)
-  nameWithType: DataSourceBinary.ToString(IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString(System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToString
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 256
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public string ToString(IFormatProvider provider)
-    parameters:
-    - id: provider
-      type: System.IFormatProvider
-    return:
-      type: System.String
-    content.vb: Public Function ToString(provider As IFormatProvider) As String
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString*
-  implements:
-  - System.IConvertible.ToString(System.IFormatProvider)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(System.Type,System.IFormatProvider)
-  commentId: M:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(System.Type,System.IFormatProvider)
-  id: ToType(System.Type,System.IFormatProvider)
-  parent: DotNetHelper.Serialization.Abstractions.DataSourceBinary
-  langs:
-  - csharp
-  - vb
-  name: ToType(Type, IFormatProvider)
-  nameWithType: DataSourceBinary.ToType(Type, IFormatProvider)
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType(System.Type, System.IFormatProvider)
-  type: Method
-  source:
-    remote:
-      path: src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-      branch: master
-      repo: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions.git
-    id: ToType
-    path: ../src/DotNetHelper.Serialization.Abstractions/DataSourceBinary.cs
-    startLine: 261
-  assemblies:
-  - DotNetHelper.Serialization.Abstractions
-  namespace: DotNetHelper.Serialization.Abstractions
-  syntax:
-    content: public object ToType(Type conversionType, IFormatProvider provider)
-    parameters:
-    - id: conversionType
+    - id: stream
+      type: System.IO.Stream
+    - id: type
       type: System.Type
-    - id: provider
-      type: System.IFormatProvider
+    - id: bufferSize
+      type: System.Int32
+    - id: leaveStreamOpen
+      type: System.Boolean
     return:
       type: System.Object
-    content.vb: Public Function ToType(conversionType As Type, provider As IFormatProvider) As Object
-  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType*
+    content.vb: Public Function Deserialize(stream As Stream, type As Type, bufferSize As Integer = 1024, leaveStreamOpen As Boolean = False) As Object
+  overload: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*
   implements:
-  - System.IConvertible.ToType(System.Type,System.IFormatProvider)
+  - DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1614,13 +986,6 @@ references:
   name: ISerializer
   nameWithType: ISerializer
   fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
-- uid: System.IConvertible
-  commentId: T:System.IConvertible
-  parent: System
-  isExternal: true
-  name: IConvertible
-  nameWithType: IConvertible
-  fullName: System.IConvertible
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -2275,15 +1640,15 @@ references:
   name: Type
   nameWithType: Type
   fullName: System.Type
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: SerializeToStream(Object, Type, Int32, Boolean)
-  nameWithType: ISerializer.SerializeToStream(Object, Type, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, System.Type, System.Int32, System.Boolean)
+  name: SerializeToStream(Object, Type, Int32)
+  nameWithType: ISerializer.SerializeToStream(Object, Type, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object, System.Type, System.Int32)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
     name: SerializeToStream
     nameWithType: ISerializer.SerializeToStream
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
@@ -2311,19 +1676,11 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(System.Object,System.Type,System.Int32)
     name: SerializeToStream
     nameWithType: ISerializer.SerializeToStream
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream
@@ -2351,29 +1708,21 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1({T},System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
-  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType: ISerializer.SerializeToStream<T>(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32, System.Boolean)
-  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  definition: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
+  name: SerializeToStream<T>(T, Int32)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32)
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream<T>
     nameWithType: ISerializer.SerializeToStream<T>
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>
@@ -2391,19 +1740,11 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream(Of T)
     nameWithType: ISerializer.SerializeToStream(Of T)
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)
@@ -2421,28 +1762,20 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
   isExternal: true
-  name: SerializeToStream<T>(T, Int32, Boolean)
-  nameWithType: ISerializer.SerializeToStream<T>(T, Int32, Boolean)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32, System.Boolean)
-  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32, Boolean)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32, System.Boolean)
-  name.vb: SerializeToStream(Of T)(T, Int32, Boolean)
+  name: SerializeToStream<T>(T, Int32)
+  nameWithType: ISerializer.SerializeToStream<T>(T, Int32)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>(T, System.Int32)
+  nameWithType.vb: ISerializer.SerializeToStream(Of T)(T, Int32)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)(T, System.Int32)
+  name.vb: SerializeToStream(Of T)(T, Int32)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream<T>
     nameWithType: ISerializer.SerializeToStream<T>
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream<T>
@@ -2460,19 +1793,11 @@ references:
     nameWithType: Int32
     fullName: System.Int32
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32,System.Boolean)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream``1(``0,System.Int32)
     name: SerializeToStream(Of T)
     nameWithType: ISerializer.SerializeToStream(Of T)
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.SerializeToStream(Of T)
@@ -2489,14 +1814,6 @@ references:
     name: Int32
     nameWithType: Int32
     fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )
@@ -2753,15 +2070,15 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: DeserializeToList(Stream)
-  nameWithType: ISerializer.DeserializeToList(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  name: DeserializeToList(Stream, Int32, Boolean)
+  nameWithType: ISerializer.DeserializeToList(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream, System.Int32, System.Boolean)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
     name: DeserializeToList
     nameWithType: ISerializer.DeserializeToList
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
@@ -2773,11 +2090,27 @@ references:
     nameWithType: Stream
     fullName: System.IO.Stream
     isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Int32,System.Boolean)
     name: DeserializeToList
     nameWithType: ISerializer.DeserializeToList
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
@@ -2788,6 +2121,22 @@ references:
     name: Stream
     nameWithType: Stream
     fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )
@@ -2874,18 +2223,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: DeserializeToList<T>(Stream)
-  nameWithType: ISerializer.DeserializeToList<T>(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(System.IO.Stream)
-  nameWithType.vb: ISerializer.DeserializeToList(Of T)(Stream)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(System.IO.Stream)
-  name.vb: DeserializeToList(Of T)(Stream)
+  name: DeserializeToList<T>(Stream, Int32, Boolean)
+  nameWithType: ISerializer.DeserializeToList<T>(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>(System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType.vb: ISerializer.DeserializeToList(Of T)(Stream, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)(System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: DeserializeToList(Of T)(Stream, Int32, Boolean)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
     name: DeserializeToList<T>
     nameWithType: ISerializer.DeserializeToList<T>
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList<T>
@@ -2897,11 +2246,27 @@ references:
     nameWithType: Stream
     fullName: System.IO.Stream
     isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList``1(System.IO.Stream,System.Int32,System.Boolean)
     name: DeserializeToList(Of T)
     nameWithType: ISerializer.DeserializeToList(Of T)
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(Of T)
@@ -2912,6 +2277,22 @@ references:
     name: Stream
     nameWithType: Stream
     fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )
@@ -2971,61 +2352,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
-  parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
-  isExternal: true
-  name: DeserializeToList(Stream, Type)
-  nameWithType: ISerializer.DeserializeToList(Stream, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream, System.Type)
-  spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
-    name: DeserializeToList
-    nameWithType: ISerializer.DeserializeToList
-    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IO.Stream
-    name: Stream
-    nameWithType: Stream
-    fullName: System.IO.Stream
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Type
-    name: Type
-    nameWithType: Type
-    fullName: System.Type
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList(System.IO.Stream,System.Type)
-    name: DeserializeToList
-    nameWithType: ISerializer.DeserializeToList
-    fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.DeserializeToList
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IO.Stream
-    name: Stream
-    nameWithType: Stream
-    fullName: System.IO.Stream
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Type
-    name: Type
-    nameWithType: Type
-    fullName: System.Type
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize*
   commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.Deserialize
   name: Deserialize
@@ -3070,15 +2396,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: Deserialize(Stream)
-  nameWithType: ISerializer.Deserialize(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  name: Deserialize(Stream, Int32, Boolean)
+  nameWithType: ISerializer.Deserialize(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream, System.Int32, System.Boolean)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
     name: Deserialize
     nameWithType: ISerializer.Deserialize
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
@@ -3090,11 +2416,27 @@ references:
     nameWithType: Stream
     fullName: System.IO.Stream
     isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Int32,System.Boolean)
     name: Deserialize
     nameWithType: ISerializer.Deserialize
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
@@ -3105,6 +2447,22 @@ references:
     name: Stream
     nameWithType: Stream
     fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )
@@ -3151,18 +2509,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: Deserialize<T>(Stream)
-  nameWithType: ISerializer.Deserialize<T>(Stream)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(System.IO.Stream)
-  nameWithType.vb: ISerializer.Deserialize(Of T)(Stream)
-  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(System.IO.Stream)
-  name.vb: Deserialize(Of T)(Stream)
+  name: Deserialize<T>(Stream, Int32, Boolean)
+  nameWithType: ISerializer.Deserialize<T>(Stream, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>(System.IO.Stream, System.Int32, System.Boolean)
+  nameWithType.vb: ISerializer.Deserialize(Of T)(Stream, Int32, Boolean)
+  fullName.vb: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)(System.IO.Stream, System.Int32, System.Boolean)
+  name.vb: Deserialize(Of T)(Stream, Int32, Boolean)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
     name: Deserialize<T>
     nameWithType: ISerializer.Deserialize<T>
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize<T>
@@ -3174,11 +2532,27 @@ references:
     nameWithType: Stream
     fullName: System.IO.Stream
     isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize``1(System.IO.Stream,System.Int32,System.Boolean)
     name: Deserialize(Of T)
     nameWithType: ISerializer.Deserialize(Of T)
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(Of T)
@@ -3189,6 +2563,22 @@ references:
     name: Stream
     nameWithType: Stream
     fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )
@@ -3248,15 +2638,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
-  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
+- uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
+  commentId: M:DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
   parent: DotNetHelper.Serialization.Abstractions.Interface.ISerializer
   isExternal: true
-  name: Deserialize(Stream, Type)
-  nameWithType: ISerializer.Deserialize(Stream, Type)
-  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream, System.Type)
+  name: Deserialize(Stream, Type, Int32, Boolean)
+  nameWithType: ISerializer.Deserialize(Stream, Type, Int32, Boolean)
+  fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream, System.Type, System.Int32, System.Boolean)
   spec.csharp:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
     name: Deserialize
     nameWithType: ISerializer.Deserialize
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
@@ -3276,11 +2666,27 @@ references:
     nameWithType: Type
     fullName: System.Type
     isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type)
+  - uid: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize(System.IO.Stream,System.Type,System.Int32,System.Boolean)
     name: Deserialize
     nameWithType: ISerializer.Deserialize
     fullName: DotNetHelper.Serialization.Abstractions.Interface.ISerializer.Deserialize
@@ -3300,891 +2706,21 @@ references:
     nameWithType: Type
     fullName: System.Type
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
-  name: GetTypeCode
-  nameWithType: DataSourceBinary.GetTypeCode
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.GetTypeCode
-- uid: System.IConvertible.GetTypeCode
-  commentId: M:System.IConvertible.GetTypeCode
-  parent: System.IConvertible
-  isExternal: true
-  name: GetTypeCode()
-  nameWithType: IConvertible.GetTypeCode()
-  fullName: System.IConvertible.GetTypeCode()
-  spec.csharp:
-  - uid: System.IConvertible.GetTypeCode
-    name: GetTypeCode
-    nameWithType: IConvertible.GetTypeCode
-    fullName: System.IConvertible.GetTypeCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.GetTypeCode
-    name: GetTypeCode
-    nameWithType: IConvertible.GetTypeCode
-    fullName: System.IConvertible.GetTypeCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.TypeCode
-  commentId: T:System.TypeCode
-  parent: System
-  isExternal: true
-  name: TypeCode
-  nameWithType: TypeCode
-  fullName: System.TypeCode
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean
-  name: ToBoolean
-  nameWithType: DataSourceBinary.ToBoolean
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToBoolean
-- uid: System.IConvertible.ToBoolean(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToBoolean(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToBoolean(IFormatProvider)
-  nameWithType: IConvertible.ToBoolean(IFormatProvider)
-  fullName: System.IConvertible.ToBoolean(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
-    name: ToBoolean
-    nameWithType: IConvertible.ToBoolean
-    fullName: System.IConvertible.ToBoolean
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
-    name: ToBoolean
-    nameWithType: IConvertible.ToBoolean
-    fullName: System.IConvertible.ToBoolean
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.IFormatProvider
-  commentId: T:System.IFormatProvider
-  parent: System
-  isExternal: true
-  name: IFormatProvider
-  nameWithType: IFormatProvider
-  fullName: System.IFormatProvider
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar
-  name: ToChar
-  nameWithType: DataSourceBinary.ToChar
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToChar
-- uid: System.IConvertible.ToChar(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToChar(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToChar(IFormatProvider)
-  nameWithType: IConvertible.ToChar(IFormatProvider)
-  fullName: System.IConvertible.ToChar(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToChar(System.IFormatProvider)
-    name: ToChar
-    nameWithType: IConvertible.ToChar
-    fullName: System.IConvertible.ToChar
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToChar(System.IFormatProvider)
-    name: ToChar
-    nameWithType: IConvertible.ToChar
-    fullName: System.IConvertible.ToChar
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Char
-  commentId: T:System.Char
-  parent: System
-  isExternal: true
-  name: Char
-  nameWithType: Char
-  fullName: System.Char
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte
-  name: ToSByte
-  nameWithType: DataSourceBinary.ToSByte
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSByte
-- uid: System.IConvertible.ToSByte(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToSByte(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToSByte(IFormatProvider)
-  nameWithType: IConvertible.ToSByte(IFormatProvider)
-  fullName: System.IConvertible.ToSByte(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToSByte(System.IFormatProvider)
-    name: ToSByte
-    nameWithType: IConvertible.ToSByte
-    fullName: System.IConvertible.ToSByte
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToSByte(System.IFormatProvider)
-    name: ToSByte
-    nameWithType: IConvertible.ToSByte
-    fullName: System.IConvertible.ToSByte
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.SByte
-  commentId: T:System.SByte
-  parent: System
-  isExternal: true
-  name: SByte
-  nameWithType: SByte
-  fullName: System.SByte
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte
-  name: ToByte
-  nameWithType: DataSourceBinary.ToByte
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToByte
-- uid: System.IConvertible.ToByte(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToByte(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToByte(IFormatProvider)
-  nameWithType: IConvertible.ToByte(IFormatProvider)
-  fullName: System.IConvertible.ToByte(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToByte(System.IFormatProvider)
-    name: ToByte
-    nameWithType: IConvertible.ToByte
-    fullName: System.IConvertible.ToByte
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToByte(System.IFormatProvider)
-    name: ToByte
-    nameWithType: IConvertible.ToByte
-    fullName: System.IConvertible.ToByte
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Byte
-  commentId: T:System.Byte
-  parent: System
-  isExternal: true
-  name: Byte
-  nameWithType: Byte
-  fullName: System.Byte
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16
-  name: ToInt16
-  nameWithType: DataSourceBinary.ToInt16
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt16
-- uid: System.IConvertible.ToInt16(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToInt16(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToInt16(IFormatProvider)
-  nameWithType: IConvertible.ToInt16(IFormatProvider)
-  fullName: System.IConvertible.ToInt16(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToInt16(System.IFormatProvider)
-    name: ToInt16
-    nameWithType: IConvertible.ToInt16
-    fullName: System.IConvertible.ToInt16
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToInt16(System.IFormatProvider)
-    name: ToInt16
-    nameWithType: IConvertible.ToInt16
-    fullName: System.IConvertible.ToInt16
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Int16
-  commentId: T:System.Int16
-  parent: System
-  isExternal: true
-  name: Int16
-  nameWithType: Int16
-  fullName: System.Int16
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16
-  name: ToUInt16
-  nameWithType: DataSourceBinary.ToUInt16
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt16
-- uid: System.IConvertible.ToUInt16(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToUInt16(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToUInt16(IFormatProvider)
-  nameWithType: IConvertible.ToUInt16(IFormatProvider)
-  fullName: System.IConvertible.ToUInt16(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
-    name: ToUInt16
-    nameWithType: IConvertible.ToUInt16
-    fullName: System.IConvertible.ToUInt16
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
-    name: ToUInt16
-    nameWithType: IConvertible.ToUInt16
-    fullName: System.IConvertible.ToUInt16
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.UInt16
-  commentId: T:System.UInt16
-  parent: System
-  isExternal: true
-  name: UInt16
-  nameWithType: UInt16
-  fullName: System.UInt16
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32
-  name: ToInt32
-  nameWithType: DataSourceBinary.ToInt32
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt32
-- uid: System.IConvertible.ToInt32(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToInt32(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToInt32(IFormatProvider)
-  nameWithType: IConvertible.ToInt32(IFormatProvider)
-  fullName: System.IConvertible.ToInt32(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToInt32(System.IFormatProvider)
-    name: ToInt32
-    nameWithType: IConvertible.ToInt32
-    fullName: System.IConvertible.ToInt32
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToInt32(System.IFormatProvider)
-    name: ToInt32
-    nameWithType: IConvertible.ToInt32
-    fullName: System.IConvertible.ToInt32
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32
-  name: ToUInt32
-  nameWithType: DataSourceBinary.ToUInt32
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt32
-- uid: System.IConvertible.ToUInt32(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToUInt32(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToUInt32(IFormatProvider)
-  nameWithType: IConvertible.ToUInt32(IFormatProvider)
-  fullName: System.IConvertible.ToUInt32(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
-    name: ToUInt32
-    nameWithType: IConvertible.ToUInt32
-    fullName: System.IConvertible.ToUInt32
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
-    name: ToUInt32
-    nameWithType: IConvertible.ToUInt32
-    fullName: System.IConvertible.ToUInt32
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.UInt32
-  commentId: T:System.UInt32
-  parent: System
-  isExternal: true
-  name: UInt32
-  nameWithType: UInt32
-  fullName: System.UInt32
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64
-  name: ToInt64
-  nameWithType: DataSourceBinary.ToInt64
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToInt64
-- uid: System.IConvertible.ToInt64(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToInt64(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToInt64(IFormatProvider)
-  nameWithType: IConvertible.ToInt64(IFormatProvider)
-  fullName: System.IConvertible.ToInt64(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToInt64(System.IFormatProvider)
-    name: ToInt64
-    nameWithType: IConvertible.ToInt64
-    fullName: System.IConvertible.ToInt64
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToInt64(System.IFormatProvider)
-    name: ToInt64
-    nameWithType: IConvertible.ToInt64
-    fullName: System.IConvertible.ToInt64
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64
-  name: ToUInt64
-  nameWithType: DataSourceBinary.ToUInt64
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToUInt64
-- uid: System.IConvertible.ToUInt64(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToUInt64(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToUInt64(IFormatProvider)
-  nameWithType: IConvertible.ToUInt64(IFormatProvider)
-  fullName: System.IConvertible.ToUInt64(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
-    name: ToUInt64
-    nameWithType: IConvertible.ToUInt64
-    fullName: System.IConvertible.ToUInt64
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
-    name: ToUInt64
-    nameWithType: IConvertible.ToUInt64
-    fullName: System.IConvertible.ToUInt64
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.UInt64
-  commentId: T:System.UInt64
-  parent: System
-  isExternal: true
-  name: UInt64
-  nameWithType: UInt64
-  fullName: System.UInt64
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle
-  name: ToSingle
-  nameWithType: DataSourceBinary.ToSingle
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToSingle
-- uid: System.IConvertible.ToSingle(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToSingle(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToSingle(IFormatProvider)
-  nameWithType: IConvertible.ToSingle(IFormatProvider)
-  fullName: System.IConvertible.ToSingle(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToSingle(System.IFormatProvider)
-    name: ToSingle
-    nameWithType: IConvertible.ToSingle
-    fullName: System.IConvertible.ToSingle
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToSingle(System.IFormatProvider)
-    name: ToSingle
-    nameWithType: IConvertible.ToSingle
-    fullName: System.IConvertible.ToSingle
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble
-  name: ToDouble
-  nameWithType: DataSourceBinary.ToDouble
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDouble
-- uid: System.IConvertible.ToDouble(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToDouble(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToDouble(IFormatProvider)
-  nameWithType: IConvertible.ToDouble(IFormatProvider)
-  fullName: System.IConvertible.ToDouble(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToDouble(System.IFormatProvider)
-    name: ToDouble
-    nameWithType: IConvertible.ToDouble
-    fullName: System.IConvertible.ToDouble
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToDouble(System.IFormatProvider)
-    name: ToDouble
-    nameWithType: IConvertible.ToDouble
-    fullName: System.IConvertible.ToDouble
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  name: Double
-  nameWithType: Double
-  fullName: System.Double
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal
-  name: ToDecimal
-  nameWithType: DataSourceBinary.ToDecimal
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDecimal
-- uid: System.IConvertible.ToDecimal(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToDecimal(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToDecimal(IFormatProvider)
-  nameWithType: IConvertible.ToDecimal(IFormatProvider)
-  fullName: System.IConvertible.ToDecimal(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
-    name: ToDecimal
-    nameWithType: IConvertible.ToDecimal
-    fullName: System.IConvertible.ToDecimal
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
-    name: ToDecimal
-    nameWithType: IConvertible.ToDecimal
-    fullName: System.IConvertible.ToDecimal
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Decimal
-  commentId: T:System.Decimal
-  parent: System
-  isExternal: true
-  name: Decimal
-  nameWithType: Decimal
-  fullName: System.Decimal
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime
-  name: ToDateTime
-  nameWithType: DataSourceBinary.ToDateTime
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToDateTime
-- uid: System.IConvertible.ToDateTime(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToDateTime(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToDateTime(IFormatProvider)
-  nameWithType: IConvertible.ToDateTime(IFormatProvider)
-  fullName: System.IConvertible.ToDateTime(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
-    name: ToDateTime
-    nameWithType: IConvertible.ToDateTime
-    fullName: System.IConvertible.ToDateTime
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
-    name: ToDateTime
-    nameWithType: IConvertible.ToDateTime
-    fullName: System.IConvertible.ToDateTime
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.DateTime
-  commentId: T:System.DateTime
-  parent: System
-  isExternal: true
-  name: DateTime
-  nameWithType: DateTime
-  fullName: System.DateTime
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString
-  name: ToString
-  nameWithType: DataSourceBinary.ToString
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToString
-- uid: System.IConvertible.ToString(System.IFormatProvider)
-  commentId: M:System.IConvertible.ToString(System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToString(IFormatProvider)
-  nameWithType: IConvertible.ToString(IFormatProvider)
-  fullName: System.IConvertible.ToString(System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToString(System.IFormatProvider)
-    name: ToString
-    nameWithType: IConvertible.ToString
-    fullName: System.IConvertible.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToString(System.IFormatProvider)
-    name: ToString
-    nameWithType: IConvertible.ToString
-    fullName: System.IConvertible.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType*
-  commentId: Overload:DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType
-  name: ToType
-  nameWithType: DataSourceBinary.ToType
-  fullName: DotNetHelper.Serialization.Abstractions.DataSourceBinary.ToType
-- uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
-  commentId: M:System.IConvertible.ToType(System.Type,System.IFormatProvider)
-  parent: System.IConvertible
-  isExternal: true
-  name: ToType(Type, IFormatProvider)
-  nameWithType: IConvertible.ToType(Type, IFormatProvider)
-  fullName: System.IConvertible.ToType(System.Type, System.IFormatProvider)
-  spec.csharp:
-  - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
-    name: ToType
-    nameWithType: IConvertible.ToType
-    fullName: System.IConvertible.ToType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Type
-    name: Type
-    nameWithType: Type
-    fullName: System.Type
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
-    name: ToType
-    nameWithType: IConvertible.ToType
-    fullName: System.IConvertible.ToType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Type
-    name: Type
-    nameWithType: Type
-    fullName: System.Type
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.IFormatProvider
-    name: IFormatProvider
-    nameWithType: IFormatProvider
-    fullName: System.IFormatProvider
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
     isExternal: true
   - name: )
     nameWithType: )

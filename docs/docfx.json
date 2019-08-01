@@ -41,9 +41,9 @@
       }
     ],
     "globalMetadata": {
-      "_appTitle": "$safeprojectname$",
+      "_appTitle": "DotNetHelper.Serialization.Abstractions",
       //"_gitContribute": {
-      //  "repo": "https://github.com/TheMofaDe/$safeprojectname$",
+      //  "repo": "https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions",
       //  "branch": "master",
       //  "apiSpecFolder": "docs-ref-overwrite"
       //},

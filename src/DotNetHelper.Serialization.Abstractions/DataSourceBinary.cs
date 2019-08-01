@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -27,8 +28,13 @@ namespace DotNetHelper.Serialization.Abstractions
             Formatter = new BinaryFormatter();
             Encoding = Encoding.UTF8;
         }
-          
 
+
+        private List<T> ObjectToList<T>(object obj)
+        {
+            var list = obj as IEnumerable<T>;
+            return list.AsList();
+        }
 
         public void SerializeToStream<T>(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
         {
@@ -84,13 +90,17 @@ namespace DotNetHelper.Serialization.Abstractions
         {
             using (var memoryStream = content.FromBase64StringToStream(Encoding))
             {
-                return (List<dynamic>)Formatter.Deserialize(memoryStream);
+                return ObjectToList<dynamic>(Formatter.Deserialize(memoryStream));
             }      
         }
 
         public List<dynamic> DeserializeToList(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
-            return (List<dynamic>)Formatter.Deserialize(stream);
+
+            var obj = Formatter.Deserialize(stream);
+            if(!leaveStreamOpen) stream.Dispose();
+            return ObjectToList<dynamic>(obj);
+           
         }
 
         public List<T> DeserializeToList<T>(string content) where T : class
@@ -103,6 +113,9 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public List<T> DeserializeToList<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
         {
+            if (!leaveStreamOpen)
+                using (stream)
+                    return (List<T>)Formatter.Deserialize(stream);
             return (List<T>)Formatter.Deserialize(stream);
         }
 
@@ -110,13 +123,17 @@ namespace DotNetHelper.Serialization.Abstractions
         {
             using (var memoryStream = content.FromBase64StringToStream(Encoding))
             {
-                return (List<object>)Formatter.Deserialize(memoryStream);
+                var obj = Formatter.Deserialize(memoryStream);
+                return ObjectToList<object>(obj);
             }
         }
 
         public List<object> DeserializeToList(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
-            return (List<object>)Formatter.Deserialize(stream);
+            if (!leaveStreamOpen)
+                using (stream)
+                    return ObjectToList<object>(Formatter.Deserialize(stream));
+            return ObjectToList<object>(Formatter.Deserialize(stream));
         }
 
         public dynamic Deserialize(string content)
@@ -129,7 +146,16 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public dynamic Deserialize(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
-            return (List<object>)Formatter.Deserialize(stream);
+            var obj = Formatter.Deserialize(stream);
+            if(!leaveStreamOpen) stream.Dispose();
+            if (obj is IEnumerable a)
+            {
+                return ObjectToList<dynamic>(a);
+            }
+            else
+            {
+                return obj;
+            }
         }
 
         public T Deserialize<T>(string content) where T : class
@@ -139,6 +165,9 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
         {
+            if (!leaveStreamOpen)
+                using (stream)
+                    return (T)Formatter.Deserialize(stream);
             return (T)Formatter.Deserialize(stream);
         }
 
@@ -152,6 +181,9 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public object Deserialize(Stream stream, Type type, int bufferSize = 1024, bool leaveStreamOpen = false)
         {
+            if(!leaveStreamOpen)
+                using(stream)
+            return Formatter.Deserialize(stream);
             return Formatter.Deserialize(stream);
         }
 

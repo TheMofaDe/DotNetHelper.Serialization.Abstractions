@@ -14,37 +14,15 @@ namespace TestApp
             public string Name { get; set; } = "Woodland";
             public string City { get; set; } = "Cartersville";
         }
+
         static void Main(string[] args)
         {
             var dataSource = new DataSourceBinary();
             var school = new School();
 
-
-            var serializer = new BinaryFormatter();
-            var memoryStream = new MemoryStream();
-            serializer.Serialize(memoryStream, school);
-            memoryStream.Seek(0, SeekOrigin.Begin);
-
-          //  var asString = new StreamReader(memoryStream,Encoding.UTF8).ReadToEnd();
-            var asString = Convert.ToBase64String(memoryStream.ToArray());
-            var backTOStream = ToStream(asString, Encoding.UTF8);
-
-            var bytes = Convert.FromBase64String(new StreamReader(backTOStream,Encoding.UTF8).ReadToEnd());
-            backTOStream = new MemoryStream(bytes);
-          //  var contents = new StreamContent(new MemoryStream(bytes));
-
-
-            var deserialize22 = serializer.Deserialize(backTOStream);
-            var deserialize = serializer.Deserialize(memoryStream);
-
-            
-        
-
-
-
-            var serializeString = dataSource.SerializeToString(school);
-            var deSerializeObj = dataSource.Deserialize(serializeString, typeof(School));
-
+            var schoolAsSerializeString = dataSource.SerializeToString(school); // SERIALIZE TO STRING
+            var schoolObjectFromSerializeString = dataSource.Deserialize(schoolAsSerializeString, typeof(School)); // DESERIALIZE TO SCHOOL OBJECT
+          
             Console.WriteLine("Hello World!");
             Console.Read();
         }
