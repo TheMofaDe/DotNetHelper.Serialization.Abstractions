@@ -1,35 +1,31 @@
 # DotNetHelper.Serialization.Abstractions
 
+#### *DotNetHelper.Serialization.Abstractions is simply a serializer and deserializer contract and with a implementation of a binary serializer* 
 
-| Package  | Tests | Coverage |
+|| [**Documentation**][Docs] • [**API**][Docs-API] • [**Tutorials**][Docs-Tutorials] ||  [**Change Log**][Changelogs] • || [**View on Github**][Github]|| 
+
+| Package  | Tests | Code Coverage |
 | :-----:  | :---: | :------: |
-| ![Build Status][nuget-downloads]  | ![Build Status][tests]  | [![Coverage Status](https://coveralls.io/repos/github/TheMofaDe/DotNetHelper.Serialization.Abstractions/badge.svg)](https://coveralls.io/github/TheMofaDe/DotNetHelper.Serialization.Abstractions) |
-
-### *Azure DevOps*
-| Windows | Linux | MacOS |
-| :-----: | :-----: | :---: | 
-| ![Build Status][azure-windows]  | ![Build Status][azure-linux]  | ![Build Status][azure-macOS] 
-
-### *AppVeyor*
-| Windows |
-| :-----: | 
-| ![Build Status][appveyor-windows]
+| ![Build Status][nuget-downloads]  | ![Build Status][tests]  | [![codecov](https://codecov.io/gh/TheMofaDe/DotNetHelper.Serialization.Abstractions/branch/master/graph/badge.svg)](https://codecov.io/gh/TheMofaDe/DotNetHelper.Serialization.Abstractions) |
 
 
-##### DotNetHelper.Serialization.Abstractions is simply a serializer and deserializer contract and with a implementation of a binary serializer
-   
+| Continous Integration | Windows | Linux | MacOS | 
+| :-----: | :-----: | :-----: | :-----: |
+| **AppVeyor** | [![Build status](https://ci.appveyor.com/api/projects/status/9mog32m4mejqyd3i?svg=true)](https://ci.appveyor.com/project/TheMofaDe/dotnethelper-database)  | | |
+| **Azure Devops** | ![Build Status][azure-windows]  | ![Build Status][azure-linux]  | ![Build Status][azure-macOS] | 
+
+## Features
+
+## Getting Started
 
 ## Documentation
-For more information, please refer to the [Officials Docs][2]
+For more information, please refer to the [Officials Docs][Docs]
 
-Created Using [DotNet-Starter-Template](http://themofade.github.io/DotNet-Starter-Template) 
+## Solution Template
+[![badge](https://img.shields.io/badge/Built%20With-DotNet--Starter--Template-orange.svg)](https://github.com/TheMofaDe/DotNet-Starter-Template)
 
 
 <!-- Links. -->
-
-[1]:  https://gist.github.com/davidfowl/ed7564297c61fe9ab814
-[2]: http://themofade.github.io/DotNetHelper.Serialization.Abstractions
-
 [Cake]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [Azure DevOps]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [AppVeyor]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
@@ -38,17 +34,20 @@ Created Using [DotNet-Starter-Template](http://themofade.github.io/DotNet-Starte
 [Chocolately]: https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 [WiX]: http://wixtoolset.org/
 [DocFx]: https://dotnet.github.io/docfx/
+[Github]: https://github.com/TheMofaDe/DotNetHelper.Serialization.Abstractions
 
+[Docs]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/index.html
+[Docs-API]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/api/DotNetHelper.Serialization.Abstractions.html
+[Docs-Tutorials]: https://themofade.github.io/DotNetHelper.Serialization.Abstractions/tutorials/index.html
+[Docs-samples]: https://dotnet.github.io/docfx/
+[Changelogs]: https://dotnet.github.io/docfx/
 
-
-<!-- BADGES. -->
 
 [nuget-downloads]: https://img.shields.io/nuget/dt/DotNetHelper.Serialization.Abstractions.svg?style=flat-square
-[tests]: https://img.shields.io/appveyor/tests/themofade/DotNetHelper.Serialization.Abstractions.svg?style=flat-square
+[tests]: https://img.shields.io/appveyor/tests/TheMofaDe/DotNetHelper.Serialization.Abstractions.svg?style=flat-square
 [coverage-status]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=Windows
-
 [azure-windows]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=Windows
 [azure-linux]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=Linux
 [azure-macOS]: https://dev.azure.com/Josephmcnealjr0013/DotNetHelper.Serialization.Abstractions/_apis/build/status/TheMofaDe.DotNetHelper.Serialization.Abstractions?branchName=master&jobName=macOS
+[app-veyor]: https://ci.appveyor.com/project/TheMofaDe/DotNetHelper.Serialization.Abstractions
 
-[appveyor-windows]: https://ci.appveyor.com/project/TheMofaDe/DotNetHelper.Serialization.Abstractions/branch/master

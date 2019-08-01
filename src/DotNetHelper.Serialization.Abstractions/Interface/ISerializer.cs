@@ -4,7 +4,7 @@ using System.IO;
 
 namespace DotNetHelper.Serialization.Abstractions.Interface
 {
-    public interface ISerializer : IConvertible
+    public interface ISerializer //: IConvertible
     {
         /// <summary>
         /// Serializes to stream.

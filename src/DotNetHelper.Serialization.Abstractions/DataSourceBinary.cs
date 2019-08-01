@@ -27,7 +27,7 @@ namespace DotNetHelper.Serialization.Abstractions
             Formatter = new BinaryFormatter();
             Encoding = Encoding.UTF8;
         }
-
+          
 
 
         public void SerializeToStream<T>(T obj, Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
@@ -39,24 +39,14 @@ namespace DotNetHelper.Serialization.Abstractions
         { 
             obj.IsNullThrow(nameof(obj));
             Formatter.Serialize(stream, obj);
-            if (leaveStreamOpen)
-            {
-                stream.Seek(0, SeekOrigin.Begin);
-            }
-            else
-            {
-                stream.Dispose();
-            }
+            if (!leaveStreamOpen) stream.Dispose();
         }
 
         public Stream SerializeToStream(object obj, Type type, int bufferSize = 1024)
         {
             obj.IsNullThrow(nameof(obj));
             var stream = new MemoryStream();
-            using (stream)
-            {
-                Formatter.Serialize(stream, obj);
-            }
+            Formatter.Serialize(stream, obj);
             return stream;
         }
 
@@ -70,26 +60,29 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public string SerializeToString(object obj)
         {
-            using (var stream = SerializeToStream(obj, obj.GetType()))
+            var memoryStream = new MemoryStream();
+            using (memoryStream)
             {
-               var sr = new StreamReader(stream, Encoding, true, 1024, false);
-                return sr.ReadToEnd();
+                Formatter.Serialize(memoryStream, obj);
+                var base64String = Convert.ToBase64String(memoryStream.ToArray());
+                return base64String;
             }
         }
 
         public string SerializeToString<T>(T obj) where T : class
         {
-            using (var stream = SerializeToStream(obj, obj.GetType()))
+            var memoryStream = new MemoryStream();
+            using (memoryStream)
             {
-                var sr = new StreamReader(stream, Encoding, true, 1024, false);
-                return sr.ReadToEnd();
+                Formatter.Serialize(memoryStream, obj);
+                var base64String = Convert.ToBase64String(memoryStream.ToArray());
+                return base64String;
             }
         }
 
         public List<dynamic> DeserializeToList(string content)
         {
-            var bytes = Encoding.GetBytes(content);
-            using (var memoryStream = new MemoryStream(bytes))
+            using (var memoryStream = content.FromBase64StringToStream(Encoding))
             {
                 return (List<dynamic>)Formatter.Deserialize(memoryStream);
             }      
@@ -102,8 +95,7 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public List<T> DeserializeToList<T>(string content) where T : class
         {
-            var bytes = Encoding.GetBytes(content);
-            using (var memoryStream = new MemoryStream(bytes))
+            using (var memoryStream = content.FromBase64StringToStream(Encoding))
             {
                 return (List<T>)Formatter.Deserialize(memoryStream);
             }
@@ -116,8 +108,7 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public List<object> DeserializeToList(string content, Type type)
         {
-            var bytes = Encoding.GetBytes(content);
-            using (var memoryStream = new MemoryStream(bytes))
+            using (var memoryStream = content.FromBase64StringToStream(Encoding))
             {
                 return (List<object>)Formatter.Deserialize(memoryStream);
             }
@@ -130,8 +121,7 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public dynamic Deserialize(string content)
         {
-            var bytes = Encoding.GetBytes(content);
-            using (var memoryStream = new MemoryStream(bytes))
+            using (var memoryStream = content.FromBase64StringToStream(Encoding))
             {
                 return Formatter.Deserialize(memoryStream);
             }
@@ -144,11 +134,7 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public T Deserialize<T>(string content) where T : class
         {
-            var bytes = Encoding.GetBytes(content);
-            using (var memoryStream = new MemoryStream(bytes))
-            {
-                return (T)Formatter.Deserialize(memoryStream);
-            }
+            return (T) Deserialize(content, typeof(T));
         }
 
         public T Deserialize<T>(Stream stream, int bufferSize = 1024, bool leaveStreamOpen = false) where T : class
@@ -158,10 +144,9 @@ namespace DotNetHelper.Serialization.Abstractions
 
         public object Deserialize(string content, Type type)
         {
-            var bytes = Encoding.GetBytes(content);
-            using (var memoryStream = new MemoryStream(bytes))
+            using (var stream = content.FromBase64StringToStream(Encoding))
             {
-                return Formatter.Deserialize(memoryStream);
+                return Formatter.Deserialize(stream);
             }
         }
 
@@ -171,89 +156,5 @@ namespace DotNetHelper.Serialization.Abstractions
         }
 
 
-        public TypeCode GetTypeCode()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool ToBoolean(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public char ToChar(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public sbyte ToSByte(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public byte ToByte(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public short ToInt16(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ushort ToUInt16(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int ToInt32(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public uint ToUInt32(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public long ToInt64(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ulong ToUInt64(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public float ToSingle(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public double ToDouble(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public decimal ToDecimal(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DateTime ToDateTime(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string ToString(IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public object ToType(Type conversionType, IFormatProvider provider)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
