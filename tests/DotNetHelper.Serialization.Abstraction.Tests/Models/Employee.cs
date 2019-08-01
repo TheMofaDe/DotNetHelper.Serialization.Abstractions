@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DotNetHelper.Serialization.Abstraction.Tests.Models
+namespace DotNetHelper.Serialization.Abstractions.Tests.Models
 {
-
     [Serializable]
-    public class Employee
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+   public class Employee
+   {
+       public string FirstName { get; set; }
+       public string LastName { get; set; } 
 
-        public Employee()
-        {
-            FirstName = "Kate";
-            LastName = "Blake";
+       public Employee()
+       {
+           FirstName = "Kate";
+           LastName = "Blake";
         }
     }
 }
